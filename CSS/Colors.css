@@ -1,0 +1,23 @@
+html{
+    scroll-behavior: smooth
+}
+
+body{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fafafa;
+    font-size: 0;
+}
+
+a{
+    text-decoration: none;
+    color: darkred;
+}
+
+
+p, a{
+    font-size: 18px;
+}
