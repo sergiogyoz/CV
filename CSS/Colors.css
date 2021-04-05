@@ -1,11 +1,18 @@
+@font-face{
+    font-family: "Open-Sans";
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face{
+    font-family: "Lato-LightItalic";
+    src: url(../fonts/Lato-LightItalic.ttf);
+}
+
 html{
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
-/* *{
-    padding: 0;
-    margin: 0;
-} */
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -18,13 +25,12 @@ body{
     margin: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(230, 230, 230);
+    background-color: #f6f6f6;
     font-size: 0;
 }
 
 a{
-    text-decoration: none;
-    color:unset;
+    color:#670404;
     font-size: 18px;
 }
 
@@ -34,26 +40,30 @@ ul{
     margin: 0;
 }
 
-h2{
-    font-size: 24px;
-    font-family: Helvetica;
-    font-weight: bold;
-    text-align: center;
-    margin: 10px auto 10px auto;
-    color: rgb(153, 138, 1);
-}
-
 h1{
     margin: 0;
     font-weight: normal;
+    font-family: "Lato-LightItalic", Times;
+    color: #dba622;
+}
+
+h2{
+    font-size: 28px;
+    font-family: "Lato-LightItalic";
+    font-weight: lighter;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    color: #d8a31c;
+    /* color: rgb(153, 138, 1); */
 }
 
 p{
-    font-family: sans-serif;
+    font-family: "Open-Sans";
     font-size: 18px;
     line-height: 1.5em;
     margin: 0;
     padding: 0;
+    overflow-wrap: break-word;
 }
 
 

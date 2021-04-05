@@ -1,6 +1,12 @@
+body{
+    min-width: 320px; /*Min width for multiple small devices*/
+    margin-bottom: 220px; /* footer area + a bit of space*/
+}
+
 header{
     height: 350px;
     width: 100%;
+    box-shadow:0 0 10px 5px rgb(80, 80, 80);
 }
 
 nav{
@@ -16,14 +22,15 @@ nav{
     background-size: cover;
     background-position: center;
     background-position: center;
-    opacity: 0.9; 
 }
 
 h1{
-    font-size: 80px;
-    color: rgba(177, 159, 0, 0.808);
+    font-size: 60px;
+    line-height: 1em;
     text-align: center;
-    mix-blend-mode: hard-light;
+    mix-blend-mode:hard-light;
+    padding-top: 90px;
+    opacity: 0.7;
 }
 
 /*
@@ -35,18 +42,23 @@ white and difference
 
 */
 
+nav>ul>li>a{
+    text-decoration: none;
+}
+
 nav>ul>li{
     display: block;
     height: 50px;
     width: 100%;
-    background-color: black;
-    color: whitesmoke;
+    background-color: #0b0b0b;
+    color: #dba622;
     text-align: center;
-    opacity: 0.5;
+    padding-top: 10px;
+    opacity: 0.6;
     transition: opacity 300ms;
 }
 nav>ul>li:hover{
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 #subnav{
@@ -61,13 +73,15 @@ nav>ul>li:hover{
 }
 
 #my-picture{
-    width: 350px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     margin: 20px auto 0 auto;
     background: url(../images/ProfilePicture.jpg);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 3px;
+    box-shadow: 0 0 10px 0px rgb(80, 80, 80);
 }
 
 .section{
@@ -78,4 +92,12 @@ nav>ul>li:hover{
     padding: 20px 30px 10px 30px;
 
 
+}
+
+footer{
+    position: absolute;
+    bottom: -220px;
+    height: 200px;
+    background-color: #0b0b0b;
+    width: 100%;
 }
