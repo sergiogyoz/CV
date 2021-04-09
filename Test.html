@@ -2,15 +2,15 @@
 <html>
     <head>
         <title>Test Page</title>
-        <link href="CSS/Colors.css" type="text/css" rel="stylesheet"/>
         <link href="CSS/SmallDisplays.css" type="text/css" rel="stylesheet"/>
+        <link href="CSS/Colors.css" type="text/css" rel="stylesheet"/>
         <link href="CSS/LargeDisplays.css" media="screen and (min-width: 1200px)" type="text/css" rel="stylesheet"/>
 
     </head>
     
 <body>
     
-    <header>
+    <header class="fade-in">
         <div id="header-image">
             <h1>Sergio Villamarin</h1>
         </div>
@@ -25,11 +25,13 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Formatiasdlfnsdfon</a></li>
-                <li><a href="index.html">Formasdftion</a></li>
+                <li><a href="index.html">About me</a></li>
+                <li><a href="index.html">XP</a></li>
                 <li><a href="index.html">Formation</a></li>
-                <li><a href="index.html">Formasdation</a></li>
-                <li><a href="index.html">Formation</a></li>
+                <li><a class="current" href="index.html">Service</a></li>
+                <li><a href="index.html">Talks/Conferences</a></li>
+                <li><a href="index.html">Research</a></li>
+                <li><a href="index.html">Projects</a></li>
             </ul>
         </nav>
     </header>
@@ -37,20 +39,27 @@
     <div class="main">
         <div id="subnav">
             <ul>
-                <li><a href="#cosa1">Cosas</a></li>
-                <li><a href="#cosa2">Cosas</a></li>
-                <li><a href="#cosa3">Cosas</a></li>
-                <li><a href="#cosa4">Cosas</a></li>
+                <li><a class="subcurrent" href="#cosa1">About me</a></li>
+                <li><a href="#cosa2">Importantes cosas</a></li>
+                <li><a href="#cosa3">Laura Cardona</a></li>
+                <li><a href="#cosa4">Un bicho!</a></li>
             </ul>
         </div>
 
         <div class="content">
             <div class="section" id="cosa1">
-                <h2>About me</h2>
-                <p>
-                    Soy sergio, juego ajedrez y en vez de estudiar pierdo el tiempo aprendiendo web design. Contratame o te destruire.
-                </p>
-                <div id="my-picture"></div>
+ 
+                <div class="left">
+                    <h2>About me</h2>
+                    <p>
+                        Soy sergio, juego ajedrez y en vez de estudiar pierdo el tiempo aprendiendo web design. Contratame o te destruire.
+                    </p>
+                </div>
+                
+                <div class="right top-block-align">
+                    <div id="my-picture" class="fade-in picture-format"></div>
+                </div>
+
             </div>
             <div class="section" id="cosa2">
                 <h2>Importantes cosas</h2>

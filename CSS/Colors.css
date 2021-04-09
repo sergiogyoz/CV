@@ -41,7 +41,8 @@ nav>ul>li>a{
 
 a{
     color:#670404;
-    font-size: 18px;
+    font-size: inherit;
+    font-family: inherit;
 }
 
 ul{
@@ -64,7 +65,6 @@ h2{
     text-align: center;
     margin: 10px auto 10px auto;
     color: #d8a31c;
-    /* color: rgb(153, 138, 1); */
 }
 
 p{
@@ -76,5 +76,17 @@ p{
     overflow-wrap: break-word;
 }
 
+.picture-format{
+    margin: 0 auto 0 auto;
+    background-position: center;
+    background-size: cover;
+    border-radius: 3px;
+    box-shadow: 0 0 10px 0px rgb(80, 80, 80);
+}
 
+.section{
+    position: relative;
+    margin: 40px 0 0 0;
+    padding: 20px 30px 10px 30px;
+}
 

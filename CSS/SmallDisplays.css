@@ -50,9 +50,6 @@ nav>ul>li{
     transition: opacity 300ms;
 }
 
-nav>ul>li:hover{
-}
-
 #menu-bar{
     position: fixed;
     width: 100%;
@@ -123,28 +120,13 @@ nav>ul>li:hover{
     display: none;
 }
 
-#subnav>ul>li>a{
-    /*JS to make an interesting animated menu*/
+#my-picture{
+    background-image: url(../images/ProfilePicture.jpg);
 }
 
-#my-picture{
+.picture-format{
     width: 280px;
     height: 280px;
-    margin: 20px auto 0 auto;
-    background: url(../images/ProfilePicture.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 3px;
-    box-shadow: 0 0 10px 0px rgb(80, 80, 80);
-}
-
-.section{
-    /* background-color:lightsteelblue; */
-    width: 100%;
-    min-height: 100px;
-    margin: 40px 0 0 0;
-    padding: 20px 30px 10px 30px;
 }
 
 footer{
