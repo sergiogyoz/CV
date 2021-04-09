@@ -16,35 +16,28 @@ nav{
 
 #header-image{
     position: absolute;
-    background: url(../images/background/GuitarHandsDark.jpg);
+    background: url(../images/background/GuitarHands.jpg);
     height: 350px;
     width: 100%;
     background-size: cover;
     background-position: center;
-    background-position: center;
 }
 
 h1{
-    font-size: 60px;
-    line-height: 1em;
+    font-size: 50px;
     text-align: center;
     mix-blend-mode:hard-light;
-    padding-top: 90px;
+    padding-top: 120px;
     opacity: 0.7;
 }
 
 /*
-
 golden and hard-light seems like hard-light might pair good
 golden and color-burn was kinda interesting but didn't work
 gray luminosity
 white and difference
 
 */
-
-nav>ul>li>a{
-    text-decoration: none;
-}
 
 nav>ul>li{
     display: block;
@@ -57,6 +50,7 @@ nav>ul>li{
     opacity: 0.6;
     transition: opacity 300ms;
 }
+
 nav>ul>li:hover{
     opacity: 0.8;
 }
@@ -67,9 +61,7 @@ nav>ul>li:hover{
 }
 
 #subnav>ul>li>a{
-    display: block;
-    background-color: teal;
-    color: lightsalmon;
+    /*JS to make an interesting animated menu*/
 }
 
 #my-picture{
@@ -90,8 +82,6 @@ nav>ul>li:hover{
     min-height: 100px;
     margin: 40px 0 0 0;
     padding: 20px 30px 10px 30px;
-
-
 }
 
 footer{
@@ -102,19 +92,33 @@ footer{
     width: 100%;
 }
 
-#nav-bar{
+#menu-bar{
     position: fixed;
     width: 100%;
     height: 60px;
 }
 
-.menu-icon-bar{
+.nav-icon-bar{
     position: absolute;
     width: 70%;
     height: 10%;
     left: 10%;
     background-color: #f6f6f6;
     border-radius: 5px;
+}
+
+#main-title{
+    position: absolute;
+    left: 60px;
+    width: 80%;
+    height: 100%;
+    
+    padding-top: 10px;
+    opacity: 0.7;
+    font-family: "Lato-LightItalic", Times;
+    color: #dba622;
+    font-size: 28px;
+    text-align: center;
 }
 
 #open-nav-button{
@@ -133,7 +137,6 @@ footer{
     border-radius: 10px;
 }
 
-
 .b1{
     top: 20%;
 }
@@ -144,4 +147,12 @@ footer{
 
 .b3{
     top: 70%;
+}
+
+#nav-bar-opacity{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #f6f6f6;
+    opacity: 0.1;
 }

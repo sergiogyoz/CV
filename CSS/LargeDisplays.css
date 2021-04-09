@@ -1,9 +1,79 @@
 body{
-    background-color: aqua;
+    
 }
 
 header{
     height: 300px;
     width: 100%px;
-    background: none;
 }
+
+.main{
+    width: 1200px;
+    margin: 0 auto 0 auto;
+}
+
+.content{
+    width: 960px;
+}
+
+#menu-bar{
+    display: none;
+}
+
+#header-image{
+    height: 300px;
+    background-position: 50% 65%;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    mix-blend-mode:hard-light;
+    padding-top: 80px;
+    opacity: 0.7;
+}
+
+nav{
+    position: absolute;
+    display: block;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+nav>ul>li{
+    display: inline-block;
+    height: 50px;
+    width: 100px;
+    background-color: #0b0b0b;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+nav>ul>li:hover{
+    opacity: 0.8;
+}
+
+#subnav{
+    position: fixed;
+    transform-origin: 50% 50%;
+    
+    display: block;
+}
+
+#subnav>ul{
+    display: block;
+}
+
+#subnav>ul>li>a{
+    display: block;
+    background-color: teal;
+    color: lightsalmon;
+}
+
+
+
+
+
+
