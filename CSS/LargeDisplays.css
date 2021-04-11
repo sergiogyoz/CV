@@ -1,14 +1,13 @@
 header{
     height: 300px;
-    width: 100%px;
 }
 
-.main{
+#content{
     width: 1200px;
     margin: 0 auto 0 auto;
 }
 
-.content{
+#sections{
     width: 960px;
     padding: 0 30px 0px 30px;
 }
@@ -17,9 +16,21 @@ header{
     display: none;
 }
 
+#main-title{
+    display: inline-block;
+    width: initial;
+    height: 40px;
+    left: initial;
+    right: 0;
+    top: 260px;
+    font-size: 24px;
+    padding: 5px 20px 0 20px;
+    font-weight: bold;
+    mix-blend-mode:hard-light;
+}
+
 #header-image{
     height: 300px;
-    background-image: url(../images/background/GuitarHands.jpg);
     background-position: 0% 55%;
     animation: backgroundslide;
     animation-duration: 1.5s;
@@ -42,7 +53,6 @@ header{
 
 h1{
     font-size: 90px;
-    text-align: center;
     padding-top: 80px;
     opacity: 1;
 }
@@ -67,9 +77,6 @@ nav>ul>li{
 }
 
 nav>ul>li>a{
-    display: block;
-    font-family: "Lato-LightItalic";
-    color: #dba622;
     mix-blend-mode:hard-light;
     font-size: 20px;
     padding: 5px 10px 0 10px;
@@ -87,7 +94,7 @@ nav>ul>li>a:hover{
     transform: translateX(960px) translateY(0px);
     display: block;
     /*border-radius: 3px;
-    box-shadow: 0 0 1px 0px rgb(80, 80, 80);*/
+    box-shadow: 0 0 1px 0px rgb(80, 80, 80); doesn't really look good*/
 }
 
 #subnav>ul{
@@ -96,14 +103,9 @@ nav>ul>li>a:hover{
 }
 
 #subnav>ul>li>a{
-    display: block;
-    width: 100%;
     height: 30px;
     padding: 8px 10px 0 10px;
-    text-decoration: none;
-    font-family: "Lato-LightItalic";
     font-size: 20px;
-    
 }
 
 a.current{

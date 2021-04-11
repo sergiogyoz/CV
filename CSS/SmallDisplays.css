@@ -1,53 +1,30 @@
 body{
     min-width: 320px; /*Min width for multiple small devices*/
-    margin-bottom: 220px; /* footer area + a bit of space*/
 }
 
 header{
     height: 350px;
-    width: 100%;
-    box-shadow:0 0 10px 5px rgb(80, 80, 80);
 }
 
 nav{
-    position: relative;
     display: none;
 }
 
 #header-image{
-    position: absolute;
-    background: url(../images/background/GuitarHands.jpg);
     height: 350px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
 }
 
 h1{
     font-size: 50px;
-    text-align: center;
-    mix-blend-mode:hard-light;
     padding-top: 120px;
     opacity: 0.7;
 }
 
-/*
-golden and hard-light seems like hard-light might pair good
-golden and color-burn was kinda interesting but didn't work
-gray luminosity
-white and difference
-
-*/
-
 nav>ul>li{
-    display: block;
     height: 50px;
     width: 100%;
     background-color: #0b0b0b;
-    color: #dba622;
-    text-align: center;
     padding-top: 10px;
-    transition: opacity 300ms;
 }
 
 #menu-bar{
@@ -57,15 +34,12 @@ nav>ul>li{
 }
 
 #main-title{
-    position: absolute;
+    top: 0;
     left: 60px;
-    width: 80%;
-    height: 100%;
-    
+    width: 80%; /*Trick, not exactly centered but for small devices it seems indistinguishable*/
+    height: 60px;
     padding-top: 10px;
     opacity: 0.7;
-    font-family: "Lato-LightItalic", Times;
-    color: #dba622;
     font-size: 28px;
     text-align: center;
 }
@@ -120,21 +94,11 @@ nav>ul>li{
     display: none;
 }
 
-#my-picture{
-    background-image: url(../images/ProfilePicture.jpg);
-}
-
 .picture-format{
     width: 280px;
     height: 280px;
 }
 
-footer{
-    position: absolute;
-    bottom: -220px;
-    height: 200px;
-    background-color: #0b0b0b;
-    width: 100%;
-}
+
 
 

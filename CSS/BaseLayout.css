@@ -29,20 +29,67 @@ body{
     height: 100%;
     background-color: #f6f6f6;
     font-size: 0;
+    margin-bottom: 220px; /* footer area + a bit of space*/
 }
 
 header{
     position: relative;
+    width: 100%;
+    height: 350px;
+    box-shadow:0 0 10px 5px rgb(80, 80, 80);
+}
+
+#header-image{
+    position: absolute;
+    background-image: url(../images/background/GuitarHands.jpg);
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+}
+
+#sections{
+}
+
+footer{
+    position: absolute;
+    bottom: -220px;
+    height: 200px;
+    background-color: #0b0b0b;
+    width: 100%;
+}
+
+#main-title{
+    font-family: "Lato-LightItalic", Times;
+    color: #dba622;
+    position: fixed;
+}
+
+
+nav>ul>li{
+    display: block;
+    color: #dba622;
+    text-align: center;
+
 }
 
 nav>ul>li>a{
     text-decoration: none;
+    display: block;
+    font-family: "Lato-LightItalic";
+    color: #dba622;
 }
 
 a{
     color:#670404;
     font-size: inherit;
     font-family: inherit;
+}
+
+#subnav>ul>li>a{
+    display: block;
+    text-decoration: none;
+    font-family: "Lato-LightItalic";
 }
 
 ul{
@@ -56,6 +103,8 @@ h1{
     font-weight: normal;
     font-family: "Lato-LightItalic", Times;
     color: #dba622;
+    text-align: center;
+    mix-blend-mode:hard-light;
 }
 
 h2{
@@ -90,3 +139,6 @@ p{
     padding: 20px 30px 10px 30px;
 }
 
+#my-picture{
+    background-image: url(../images/ProfilePicture.jpg);
+}
