@@ -8,6 +8,7 @@ header{
 }
 
 #sections{
+    display: inline-block;
     width: 960px;
     padding: 0 30px 0px 30px;
 }
@@ -89,10 +90,11 @@ nav>ul>li>a:hover{
 }
 
 #subnav{
-    position: fixed;
-    transform-origin: 50% 50%;
-    transform: translateX(960px) translateY(0px);
-    display: block;
+    position: sticky;
+    vertical-align: top;
+    top: 100px;
+    display: inline-block;
+    width: 240px;
     /*border-radius: 3px;
     box-shadow: 0 0 1px 0px rgb(80, 80, 80); doesn't really look good*/
 }
@@ -103,9 +105,10 @@ nav>ul>li>a:hover{
 }
 
 #subnav>ul>li>a{
-    height: 30px;
+    height: 40px;
     padding: 8px 10px 0 10px;
     font-size: 20px;
+    white-space: nowrap;
 }
 
 a.current{
