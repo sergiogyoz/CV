@@ -10,13 +10,13 @@ nav{
     display: none;
 }
 
-#header-image{
+#header-background{
     height: 350px;
 }
 
 h1{
     font-size: 50px;
-    padding-top: 120px;
+    padding-top: 100px;
 }
 
 nav>ul>li{
@@ -33,6 +33,7 @@ nav>ul>li{
 }
 
 #main-title{
+    position: fixed;
     top: 0;
     left: 60px;
     width: 80%; /*Trick, not exactly centered but for small devices it seems indistinguishable*/
@@ -96,7 +97,3 @@ nav>ul>li{
     width: 280px;
     height: 280px;
 }
-
-
-
-

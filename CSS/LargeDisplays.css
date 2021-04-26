@@ -14,22 +14,33 @@ header{
 }
 
 #menu-bar{
+    height: 40px;
+}
+
+#nav-bar-opacity{
+    background-color: #0b0b0b;
+    opacity: 1;
+}
+
+#open-nav-button{
     display: none;
 }
 
 #main-title{
     display: inline-block;
+    position: absolute;
     width: initial;
     height: 40px;
+    top: initial;
     left: initial;
+    bottom: 0px;
     right: 0;
-    top: 260px;
     font-size: 24px;
-    padding: 5px 20px 0 20px;
+    padding: 1px 20px 0 20px;
     font-weight: bold;
 }
 
-#header-image{
+#header-background{
     height: 300px;
 }
 
@@ -49,10 +60,10 @@ h1{
 }
 
 nav{
-    position: absolute;
+    position: fixed;
     display: inline-block;
     width: 100%;
-    bottom: 0;
+    top: 0;
     height: 40px;
 }
 
