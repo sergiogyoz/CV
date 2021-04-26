@@ -27,24 +27,15 @@ header{
     font-size: 24px;
     padding: 5px 20px 0 20px;
     font-weight: bold;
-    mix-blend-mode:hard-light;
 }
 
 #header-image{
     height: 300px;
-    background-position: 0% 55%;
-    animation: backgroundslide;
-    animation-duration: 1.5s;
 }
 
 .fade-in{
     animation: fadein;
     animation-duration: 1.5s;
-}
-
-@keyframes backgroundslide{
-    0%{    background-position: 0% 0%;}
-    100%{   background-position: 0% 55%;}
 }
 
 @keyframes fadein{
@@ -55,7 +46,6 @@ header{
 h1{
     font-size: 90px;
     padding-top: 80px;
-    opacity: 1;
 }
 
 nav{
@@ -78,7 +68,6 @@ nav>ul>li{
 }
 
 nav>ul>li>a{
-    mix-blend-mode:hard-light;
     font-size: 20px;
     padding: 5px 10px 0 10px;
     height: 100%;
@@ -86,7 +75,7 @@ nav>ul>li>a{
 }
 
 nav>ul>li>a:hover{
-    background-color: #0b0b0b90;
+    background-color: #f6f6f630;
 }
 
 #subnav{
@@ -142,7 +131,7 @@ a.subcurrent{
     padding: 20px;
 }
 
-.offset2center{ }
+
 .top-block-align{  vertical-align: top;  }
 .bottom-block-align{  vertical-align: bottom;  }
 

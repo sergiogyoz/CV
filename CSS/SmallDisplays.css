@@ -17,7 +17,6 @@ nav{
 h1{
     font-size: 50px;
     padding-top: 120px;
-    opacity: 0.7;
 }
 
 nav>ul>li{
@@ -39,7 +38,6 @@ nav>ul>li{
     width: 80%; /*Trick, not exactly centered but for small devices it seems indistinguishable*/
     height: 60px;
     padding-top: 10px;
-    opacity: 0.7;
     font-size: 28px;
     text-align: center;
 }
