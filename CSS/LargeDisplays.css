@@ -112,7 +112,6 @@ nav>ul>li>a:hover{
 }
 
 a.current{
-    background-color: #0b0b0b50;
     font-weight: bold;
 }
 
