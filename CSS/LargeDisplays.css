@@ -28,16 +28,25 @@ header{
 
 #main-title{
     display: inline-block;
-    position: absolute;
     width: initial;
     height: 40px;
-    top: initial;
-    left: initial;
-    bottom: 0px;
-    right: 0;
     font-size: 24px;
     padding: 1px 20px 0 20px;
     font-weight: bold;
+}
+
+.main-title-position{
+    position: absolute;
+    top: initial;
+    left: initial;
+    bottom: 0;
+    right: 0;  
+}
+
+.main-title-fixed{
+    position: fixed;
+    bottom: initial;
+    top: 0;
 }
 
 #header-background{

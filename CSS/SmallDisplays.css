@@ -33,14 +33,17 @@ nav>ul>li{
 }
 
 #main-title{
-    position: fixed;
-    top: 0;
-    left: 60px;
     width: 80%; /*Trick, not exactly centered but for small devices it seems indistinguishable*/
     height: 60px;
     padding-top: 10px;
     font-size: 28px;
     text-align: center;
+}
+
+.main-title-position{
+    position: fixed;
+    top: 0;
+    left: 60px;
 }
 
 #open-nav-button{

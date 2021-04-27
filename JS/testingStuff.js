@@ -1,6 +1,3 @@
-
-
-
 function changetitles(title) {
     var mainTitle=document.getElementById("main-title");
     var headerTitle=document.getElementsByTagName("h1");
@@ -9,9 +6,18 @@ function changetitles(title) {
     headerTitle[0].textContent=titulo;
 }
 
-window.onload=function () {
-    changetitles("");
+function navbarbehavior(){
+    var mainTitle=document.getElementById("main-title");
+    mainTitle.classList.add("main-title-fixed");
+    /*mainTitle.style.position="fixed";
+    mainTitle.style.bottom="initial";
+    mainTitle.style.top="0px";*/
+    alert(mainTitle.className);
+    
 }
 
-
+window.onload=function () {
+    changetitles("");
+    navbarbehavior();
+}
 
