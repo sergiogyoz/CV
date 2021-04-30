@@ -22,9 +22,9 @@ class Section{
     }
 }
 
+
 function addSection(Section) {
     var sections=document.getElementById("sections");
-    console.log(sections.className);
     var snode= document.createElement("div");
     snode.classList.add("section");
     snode.id="crazy-section";
@@ -46,7 +46,5 @@ window.onload=function () {
     /*testing tree transversing*/
     addSection(x);
     addSection( new Section("La chutengcia","Cosas geomorfologas de GIS, el Lidar del geodolito nos permite hacer un paralaje inesperado y scientifico") );
-
-
 }
 
