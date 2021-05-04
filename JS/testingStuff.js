@@ -22,7 +22,6 @@ class Section{
     }
 }
 
-
 function addSection(Section) {
     var sections=document.getElementById("sections");
     var snode= document.createElement("div");
@@ -38,6 +37,15 @@ function addSection(Section) {
 }
 
 
+function clickOnSections() {
+    var sections=document.getElementsByClassName("section");
+    for (let i=0; i < sections.length; i++) {
+        sections[i].addEventListener("click",function () {sections[i].style.backgroundColor="black"; } )
+    }
+}
+
+
+
 window.onload=function () {
     changetitles("Sergio Villamarin");
     navbarbehavior();
@@ -46,5 +54,5 @@ window.onload=function () {
     /*testing tree transversing*/
     addSection(x);
     addSection( new Section("La chutengcia","Cosas geomorfologas de GIS, el Lidar del geodolito nos permite hacer un paralaje inesperado y scientifico") );
+    clickOnSections();
 }
-
