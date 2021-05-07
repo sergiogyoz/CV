@@ -126,6 +126,7 @@ a.subcurrent{
 #my-picture{
     width: 360px;
     height: 300px;
+    filter: grayscale();
 }
 
 .left{
