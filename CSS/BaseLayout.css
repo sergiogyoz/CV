@@ -1,38 +1,60 @@
+@font-face{
+    font-family: "Open-Sans";
+    src: url(../fonts/OpenSans-Regular.ttf) format('truetype');
+}
+
+@font-face{
+    font-family: "Lato";
+    src: url(../fonts/Lato-Italic.ttf) format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: "Lato-Light";
+    src: url(../fonts/Lato-LightItalic.ttf) format('truetype');
+    font-weight: lighter;
+    font-style: italic;
+}
+
+a,h1,h2,#main-title,#my-name{
+    font-family: "Lato-Light";
+    font-weight: lighter;
+    font-style: italic;
+}
+
+a{
+    text-decoration: none;
+}
+
 #colors{
     color: #0b0b0b;
+    color: #121212;
     color: #d8a31c;
+    color: #755a15;
     color: #670404;
+    color: #a32929;
     color: #f6f6f6;
     color: #afafaf;
     color: #505050;
-    color: #121212;
 }
-
-.gold-font{
+/*
+.gold-font,h1{
     color: #d8a31c;
 }
 
-.velvet-font{
+.velvet-font,a,h2{
     color: #670404;
 }
 
-.white-background{
-    background-color: #f6f6f6;
-    color: #505050;
-}
 .black-background{
     background-color: #121212;
     color: #afafaf;
 }
-
-@font-face{
-    font-family: "Open-Sans";
-    src: url(../fonts/OpenSans-Regular.ttf);
-}
-
-@font-face{
-    font-family: "Lato-LightItalic";
-    src: url(../fonts/Lato-LightItalic.ttf);
+*/
+.white-background{
+    background-color: #f6f6f6;
+    color: #505050;
 }
 
 html{
@@ -42,6 +64,8 @@ html{
 
 *, *:before, *:after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 *{
@@ -50,12 +74,8 @@ html{
 
 body{
     position: relative;
-    padding: 0;
-    margin: 0;
     width: 100%;
     height: 100%;
-    background-color: #f6f6f6;
-    color: #505050;
     font-size: 0;
     margin-bottom: 220px; /* footer area + a bit of space*/
 }
@@ -80,21 +100,11 @@ header{
     text-align: center;
 }
 
-h1{
-    margin: 0;
-    font-weight: normal;
-    font-family: "Lato-LightItalic", Times;
-}
-
 footer{
     position: absolute;
     bottom: -220px;
     height: 200px;
     width: 100%;
-}
-
-#main-title, #my-name{
-    font-family: "Lato-LightItalic", Times;
 }
 
 #nav-bar-background{
@@ -110,32 +120,19 @@ nav>ul>li{
 }
 
 nav>ul>li>a{
-    text-decoration: none;
     display: block;
-    font-family: "Lato-LightItalic";
-}
-
-a{
-    font-size: inherit;
-    font-family: inherit;
 }
 
 #subnav>ul>li>a{
     display: block;
-    text-decoration: none;
-    font-family: "Lato-LightItalic";
 }
 
 ul{
     list-style-type: none;
-    padding: 0;
-    margin: 0;
 }
 
 h2{
     font-size: 28px;
-    font-family: "Lato-LightItalic";
-    font-weight: lighter;
     text-align: center;
     margin: 10px auto 10px auto;
 }
@@ -144,9 +141,12 @@ p{
     font-family: "Open-Sans";
     font-size: 18px;
     line-height: 1.5em;
-    margin: 0;
-    padding: 0;
     overflow-wrap: break-word;
+}
+
+p>a{
+    font-family: inherit;
+    text-decoration: underline;
 }
 
 .picture-format{

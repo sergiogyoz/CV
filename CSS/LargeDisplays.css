@@ -36,7 +36,6 @@ header{
     height: 40px;
     font-size: 24px;
     padding: 1px 20px 0 20px;
-    font-weight: bold;
 }
 
 .main-title-fixed{
@@ -115,18 +114,17 @@ nav>ul>li>a:hover{
 }
 
 a.current{
-    font-weight: bold;
+    font-family: "Lato";
     background-color: #f6f6f620;
 }
 
 a.subcurrent{
-    font-weight: bold;
+    font-family: "Lato";
 }
 
 #my-picture{
     width: 360px;
     height: 300px;
-    filter: grayscale();
 }
 
 .left{
