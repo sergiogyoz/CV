@@ -1,11 +1,60 @@
 @font-face{
     font-family: "Open-Sans";
-    src: url(../fonts/OpenSans-Regular.ttf);
+    src: url(../fonts/OpenSans-Regular.ttf) format('truetype');
 }
 
 @font-face{
-    font-family: "Lato-LightItalic";
-    src: url(../fonts/Lato-LightItalic.ttf);
+    font-family: "Lato";
+    src: url(../fonts/Lato-Italic.ttf) format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: "Lato-Light";
+    src: url(../fonts/Lato-LightItalic.ttf) format('truetype');
+    font-weight: lighter;
+    font-style: italic;
+}
+
+a,h1,h2,#main-title,#my-name{
+    font-family: "Lato-Light";
+    font-weight: lighter;
+    font-style: italic;
+}
+
+a{
+    text-decoration: none;
+}
+
+#colors{
+    color: #0b0b0b;
+    color: #121212;
+    color: #d8a31c;
+    color: #755a15;
+    color: #670404;
+    color: #a32929;
+    color: #f6f6f6;
+    color: #afafaf;
+    color: #505050;
+}
+/*
+.gold-font,h1{
+    color: #d8a31c;
+}
+
+.velvet-font,a,h2{
+    color: #670404;
+}
+
+.black-background{
+    background-color: #121212;
+    color: #afafaf;
+}
+*/
+.white-background{
+    background-color: #f6f6f6;
+    color: #505050;
 }
 
 html{
@@ -15,19 +64,18 @@ html{
 
 *, *:before, *:after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 *{
-    color: rgb(80, 80, 80);
+    color: inherit;
 }
 
 body{
     position: relative;
-    padding: 0;
-    margin: 0;
     width: 100%;
     height: 100%;
-    background-color: #f6f6f6;
     font-size: 0;
     margin-bottom: 220px; /* footer area + a bit of space*/
 }
@@ -36,86 +84,69 @@ header{
     position: relative;
     width: 100%;
     height: 350px;
-    box-shadow:0 0 10px 5px rgb(80, 80, 80);
+    box-shadow:0 0 10px 0px rgb(80, 80, 80);
 }
+
+#menu-bar{
+    width: 100%;
+    position: fixed;
+}
+
 
 #header-background{
     position: absolute;
     width: 100%;
     height: 350px;
-    background-color: #0b0b0b;
     text-align: center;
-}
-
-h1{
-    margin: 0;
-    font-weight: normal;
-    font-family: "Lato-LightItalic", Times;
-    color: #d8a31c;
 }
 
 footer{
     position: absolute;
     bottom: -220px;
     height: 200px;
-    background-color: #0b0b0b;
     width: 100%;
 }
 
-#main-title{
-    font-family: "Lato-LightItalic", Times;
-    color: #d8a31c;
+#nav-bar-background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
-
 
 nav>ul>li{
     display: block;
-    color: #d8a31c;
     text-align: center;
 
 }
 
 nav>ul>li>a{
-    text-decoration: none;
     display: block;
-    font-family: "Lato-LightItalic";
-    color: #d8a31c;
-}
-
-a{
-    color:#670404;
-    font-size: inherit;
-    font-family: inherit;
 }
 
 #subnav>ul>li>a{
     display: block;
-    text-decoration: none;
-    font-family: "Lato-LightItalic";
 }
 
 ul{
     list-style-type: none;
-    padding: 0;
-    margin: 0;
 }
 
 h2{
     font-size: 28px;
-    font-family: "Lato-LightItalic";
-    font-weight: lighter;
     text-align: center;
     margin: 10px auto 10px auto;
-    color: #d8a31c;
 }
 
 p{
     font-family: "Open-Sans";
     font-size: 18px;
     line-height: 1.5em;
-    margin: 0;
-    padding: 0;
     overflow-wrap: break-word;
+}
+
+p>a{
+    font-family: inherit;
+    text-decoration: underline;
 }
 
 .picture-format{
@@ -132,10 +163,16 @@ p{
     padding: 20px 30px 10px 30px;
 }
 
+.darken{
+    background-color: #121212;
+    box-shadow:0 0 10px 0px rgb(80, 80, 80);
+    color: #afafaf;
+}
+
 #my-picture{
     background-image: url(../images/ProfilePicture.jpg);
 }
 
 .ontop{
-    z-index: 5;
+    z-index: 5; /*Prevents the nav bar from going behind objects when scrolling*/
 }

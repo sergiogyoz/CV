@@ -1,7 +1,9 @@
 function changetitles(title) {
     var mainTitle=document.getElementById("main-title");
+    var myname=document.getElementById("my-name");
     var headerTitle=document.getElementsByTagName("h1");  
     mainTitle.textContent=title;
+    myname.textContent=title;
     headerTitle[0].textContent=title;
 }
 
@@ -40,7 +42,7 @@ function addSection(Section) {
 function clickOnSections() {
     var sections=document.getElementsByClassName("section");
     for (let i=0; i < sections.length; i++) {
-        sections[i].addEventListener("click",function () {sections[i].style.backgroundColor="black"; } )
+        sections[i].addEventListener("click",function () {sections[i].classList.add("darken"); } )
     }
 }
 

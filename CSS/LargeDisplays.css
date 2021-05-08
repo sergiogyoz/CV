@@ -17,30 +17,25 @@ header{
     height: 40px;
 }
 
-#nav-bar-opacity{
-    background-color: #0b0b0b;
-    opacity: 1;
-}
-
 #open-nav-button{
     display: none;
 }
 
 #main-title{
-    display: inline-block;
-    width: initial;
+    display: none;
+}
+
+.my-name-position{
+    position: absolute;
+    bottom: 0;
+    right: 0;  
+}
+
+#my-name{
+    display: block;
     height: 40px;
     font-size: 24px;
     padding: 1px 20px 0 20px;
-    font-weight: bold;
-}
-
-.main-title-position{
-    position: absolute;
-    top: initial;
-    left: initial;
-    bottom: 0;
-    right: 0;  
 }
 
 .main-title-fixed{
@@ -95,7 +90,7 @@ nav>ul>li>a{
 }
 
 nav>ul>li>a:hover{
-    background-color: #f6f6f630;
+    background-color: #f6f6f630; /*color outside the baselayout*/
 }
 
 #subnav{
@@ -104,8 +99,6 @@ nav>ul>li>a:hover{
     top: 100px;
     display: inline-block;
     width: 240px;
-    /*border-radius: 3px;
-    box-shadow: 0 0 1px 0px rgb(80, 80, 80); doesn't really look good*/
 }
 
 #subnav>ul{
@@ -121,12 +114,12 @@ nav>ul>li>a:hover{
 }
 
 a.current{
-    font-weight: bold;
+    font-family: "Lato";
+    background-color: #f6f6f620;
 }
 
 a.subcurrent{
-    color: #0b0b0b;
-    font-weight: bold;
+    font-family: "Lato";
 }
 
 #my-picture{
