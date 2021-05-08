@@ -4,8 +4,62 @@
 }
 
 @font-face{
+<<<<<<< Updated upstream
     font-family: "Lato-LightItalic";
     src: url(../fonts/Lato-LightItalic.ttf);
+=======
+    font-family: "Lato";
+    src: url(../fonts/Lato-Italic.ttf) format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: "Lato-Light";
+    src: url(../fonts/Lato-LightItalic.ttf) format('truetype');
+    font-weight: lighter;
+    font-style: italic;
+}
+
+a,h1,h2,#main-title,#my-name{
+    font-family: "Lato-Light";
+    font-weight: lighter;
+    font-style: italic;
+}
+
+a{
+    text-decoration: none;
+}
+
+#colors{
+    color: #0b0b0b;
+    color: #121212;
+    color: #d8a31c;
+    color: #755a15;
+    color: #670404;
+    color: #a32929;
+    color: #f6f6f6;
+    color: #afafaf;
+    color: #505050;
+}
+
+.gold-font,h1{
+    color: #d8a31c;
+}
+
+.velvet-font,a,h2{
+    color: #670404;
+}
+
+.black-background{
+    background-color: #121212;
+    color: #afafaf;
+}
+
+.white-background{
+    background-color: #f6f6f6;
+    color: #505050;
+>>>>>>> Stashed changes
 }
 
 html{

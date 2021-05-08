@@ -97,6 +97,12 @@ nav>ul>li{
 }
 
 .picture-format{
+<<<<<<< Updated upstream
     width: 280px;
     height: 280px;
+=======
+    margin: 20px auto 20px auto;
+    width: 300px;
+    height: 300px;
+>>>>>>> Stashed changes
 }
