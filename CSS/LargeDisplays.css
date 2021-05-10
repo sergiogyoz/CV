@@ -143,6 +143,9 @@ a.subcurrent{
     padding: 20px;
 }
 
+.bolding{
+    font-weight: bold;
+}
 
 .top-block-align{  vertical-align: top;  }
 .bottom-block-align{  vertical-align: bottom;  }
