@@ -3,13 +3,13 @@ header{
 }
 
 #content{
-    width: 1200px;
+    width: 1080px;
     margin: 0 auto 0 auto;
 }
 
 #sections{
     display: inline-block;
-    width: 960px;
+    width: 840px;
     padding: 0 30px 0px 30px;
 }
 
@@ -90,7 +90,7 @@ nav>ul>li>a{
 }
 
 nav>ul>li>a:hover{
-    background-color: #f6f6f630; /*color outside the baselayout*/
+    background-color: #afafaf30; /*color outside the baselayout*/
 }
 
 #subnav{
@@ -98,7 +98,7 @@ nav>ul>li>a:hover{
     vertical-align: top;
     top: 100px;
     display: inline-block;
-    width: 240px;
+    width: 120px;
 }
 
 #subnav>ul{
@@ -115,7 +115,7 @@ nav>ul>li>a:hover{
 
 a.current{
     font-family: "Lato";
-    background-color: #f6f6f620;
+    background-color: #afafaf50;
 }
 
 a.subcurrent{
