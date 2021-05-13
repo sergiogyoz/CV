@@ -111,6 +111,10 @@ nav>ul>li>a:hover{
     padding: 8px 10px 0 10px;
     font-size: 20px;
     white-space: nowrap;
+    transition: 250ms;
+}
+#subnav>ul>li>a:hover{
+    transform: translateX(1px);
 }
 
 a.current{
@@ -141,10 +145,6 @@ a.subcurrent{
     right: 0;
     width: 50%;
     padding: 20px;
-}
-
-.bolding{
-    font-weight: bold;
 }
 
 .top-block-align{  vertical-align: top;  }
