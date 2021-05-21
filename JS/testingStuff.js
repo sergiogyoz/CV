@@ -7,15 +7,6 @@ function changetitles(title) {
     headerTitle[0].textContent=title;
 }
 
-function navbarbehavior(){
-    var mainTitle=document.getElementById("main-title");
-    mainTitle.classList.add("main-title-fixed");
-    /*mainTitle.style.position="fixed";
-    mainTitle.style.bottom="initial";
-    mainTitle.style.top="0px";
-    alert(mainTitle.className);*/
-}
-
 class Section{
     constructor(title, content){this.title=title;   this.content=content;}
     
@@ -49,8 +40,6 @@ function clickOnSections() {
 
 
 window.onload=function () {
-    changetitles("Sergio Villamarin");
-    navbarbehavior();
     /*testing objects*/
     let x=new Section("mis cositas","Aqui va una detallada explicacion de mis cositas");
     /*testing tree transversing*/
