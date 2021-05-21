@@ -3,7 +3,5 @@ class PageState{
         this.currentNav=null;
         this.currentSubnav=null;
     }
-    function updatePageState() {
-        
-    }
+
 }
