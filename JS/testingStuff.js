@@ -1,9 +1,7 @@
 function changetitles(title) {
     var mainTitle=document.getElementById("main-title");
-    var myname=document.getElementById("my-name");
     var headerTitle=document.getElementsByTagName("h1");  
     mainTitle.textContent=title;
-    myname.textContent=title;
     headerTitle[0].textContent=title;
 }
 

@@ -43,10 +43,6 @@ nav>ul>li{
     left: 60px;
 }
 
-#my-name{
-    display: none;
-}
-
 #open-nav-button{
     position: absolute;
     left: 0;
@@ -91,5 +87,4 @@ nav>ul>li{
     margin: 20px auto 20px auto;
     width: 300px;
     height: 300px;
-    filter: grayscale();
 }

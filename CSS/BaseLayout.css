@@ -17,7 +17,7 @@
     font-style: italic;
 }
 
-a,h1,h2,#main-title,#my-name{
+a,h1,h2,#main-title{
     font-family: "Lato-Light";
     font-weight: lighter;
     font-style: italic;
@@ -29,30 +29,28 @@ a{
 
 #colors{
     color: #0b0b0b;
+    color: #aa7b2b;
     color: #121212;
-    color: #d8a31c;
-    color: #755a15;
     color: #670404;
-    color: #a32929;
     color: #f6f6f6;
     color: #afafaf;
     color: #505050;
 }
-/*
-.gold-font,h1{
-    color: #d8a31c;
+
+.primary-font-color,h1,h2{
+    color: #aa7b2b;
 }
 
-.velvet-font,a,h2{
+.secondary-font-color,a{
     color: #670404;
 }
 
-.black-background{
+.dark-background{
     background-color: #121212;
     color: #afafaf;
 }
-*/
-.white-background{
+
+.light-background{
     background-color: #f6f6f6;
     color: #505050;
 }
@@ -84,7 +82,7 @@ header{
     position: relative;
     width: 100%;
     height: 350px;
-    box-shadow:0 0 10px 0px rgb(80, 80, 80);
+    box-shadow:0 -10px 15px 0px #505050;
 }
 
 #menu-bar{
@@ -154,7 +152,7 @@ p>a{
     background-position: center;
     background-size: cover;
     border-radius: 3px;
-    box-shadow: 0 0 10px 0px rgb(80, 80, 80);
+    box-shadow: 0 0 10px 0px #505050;
 }
 
 .section{
@@ -165,7 +163,7 @@ p>a{
 
 .darken{
     background-color: #121212;
-    box-shadow:0 0 10px 0px rgb(80, 80, 80);
+    box-shadow:0 0 10px 0px #505050;
     color: #afafaf;
 }
 
