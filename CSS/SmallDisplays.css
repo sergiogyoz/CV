@@ -30,7 +30,7 @@ nav>ul>li{
 }
 
 #main-title{
-    width: 80%; /*Trick, not exactly centered but for small devices it seems indistinguishable*/
+    width: 70%; /*Trick, not exactly centered but for small devices it seems indistinguishable*/
     height: 60px;
     padding-top: 10px;
     font-size: 28px;
@@ -63,8 +63,8 @@ nav>ul>li{
     width: 70%;
     height: 10%;
     left: 15%;
-    background-color: #f6f6f6; /*color outside the baselayout*/
     border-radius: 5px;
+    background-color: black;
 }
 
 .b1{

@@ -1,10 +1,3 @@
-function changetitles(title) {
-    var mainTitle=document.getElementById("main-title");
-    var headerTitle=document.getElementsByTagName("h1");  
-    mainTitle.textContent=title;
-    headerTitle[0].textContent=title;
-}
-
 class Section{
     constructor(title, content){this.title=title;   this.content=content;}
     
