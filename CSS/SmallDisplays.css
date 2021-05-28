@@ -3,7 +3,7 @@ body{
 }
 
 header{
-    height: 350px;
+    height: 250px;
 }
 
 nav{
@@ -11,12 +11,12 @@ nav{
 }
 
 #header-background{
-    height: 350px;
+    height: 250px;
 }
 
 h1{
     font-size: 50px;
-    padding-top: 150px;
+    padding-top: 100px;
 }
 
 nav>ul>li{
