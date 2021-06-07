@@ -21,7 +21,7 @@ function addSection(Section) {
 }
 
 
-function clickOnSections() {
+function clickEffectOnSections() {
     var sections=document.getElementsByClassName("section");
     for (let i=0; i < sections.length; i++) {
         sections[i].addEventListener("click",function () {sections[i].classList.add("darken"); } )
@@ -36,5 +36,6 @@ window.onload=function () {
     /*testing tree transversing*/
     addSection(x);
     addSection( new Section("La chutengcia","Cosas geomorfologas de GIS, el Lidar del geodolito nos permite hacer un paralaje inesperado y scientifico") );
-    clickOnSections();
+    clickEffectOnSections();
+    
 }

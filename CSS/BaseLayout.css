@@ -68,6 +68,7 @@ html{
 
 *{
     color: inherit;
+    font-size: inherit;
 }
 
 body{
@@ -155,6 +156,10 @@ p>a{
     box-shadow: 0 0 10px 0px #505050;
 }
 
+#sections{
+    position: relative;
+}
+
 .section{
     position: relative;
     margin: 40px 0 0 0;
@@ -173,4 +178,8 @@ p>a{
 
 .ontop{
     z-index: 5; /*Prevents the nav bar from going behind objects when scrolling*/
+}
+
+.text{
+    font-size: 14px;
 }
