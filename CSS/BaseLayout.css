@@ -153,7 +153,7 @@ p>a{
     background-position: center;
     background-size: cover;
     border-radius: 3px;
-    box-shadow: 0 0 10px 0px #505050;
+    box-shadow: 0 0 10px -5px #505050;
 }
 
 #sections{
@@ -173,7 +173,7 @@ p>a{
 }
 
 #my-picture{
-    background-image: url(../images/ProfilePicture.jpg);
+    background-image: url(../images/Profile_picture.jpg);
 }
 
 .ontop{
