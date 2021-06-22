@@ -169,7 +169,12 @@ p>a{
 .darken{
     background-color: #121212;
     box-shadow:0 0 10px 0px #505050;
+    border-radius: 3px;
     color: #afafaf;
+}
+
+.darken>p>a{
+    color:rgb(153, 4, 4);
 }
 
 #my-picture{
