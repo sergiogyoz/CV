@@ -1,4 +1,3 @@
-import {createSections} from "./FillPage.js"
+import {SimpleSections} from "./FillPage.js"
 
-window.onload=createSections();
-
+window.onload=SimpleSections();

@@ -1,14 +1,14 @@
 let sections=document.getElementById("sections");
 let subnavlist=document.getElementById("subnav").children[0];
 
-function addSection(fill_section_method, id, title, ...params) {
+function addSection(section_method, id, title, ...params) {
 
     const newsection= document.createElement("div");
     newsection.classList.add("section");
     newsection.id=id;
 
     if(params.length==1) //title and content only
-        fill_section_method(newsection,title,params[0]);
+        section_method(newsection,title,params[0]);
     
     sections.append(newsection);
 
@@ -23,13 +23,13 @@ function addSection(fill_section_method, id, title, ...params) {
 }
 
 
-function simpleContent(sectionNode, title, content) {
+function simpleContent(sectionNode, title, htmlcontent) {
     const t=document.createElement("h2");
     t.textContent= title;
     sectionNode.append(t);
 
     const c=document.createElement("p");
-    c.innerHTML= content;
+    c.innerHTML= htmlcontent;
     sectionNode.append(c);   
 }
 
@@ -38,4 +38,24 @@ function clickEffectOnSections(section) {
     section.addEventListener("click",function () {section.classList.add("darken"); } );
 }
 
-export {addSection, simpleContent}
+function addSectionsFromJSON(url, section_method){
+    const request= new XMLHttpRequest(); 
+    request.onload=function () {
+        let obj=JSON.parse(request.responseText);
+        for(var i=0; i<3; i++){
+            let section= obj.sections[i];
+            addSection(section_method, section.id, section.title, section.content);
+        }
+    }
+    request.open("GET", url);
+    request.send();   
+}
+
+
+
+
+
+
+
+
+export {simpleContent, addSectionsFromJSON, addSection}
