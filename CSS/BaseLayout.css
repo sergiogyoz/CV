@@ -76,7 +76,7 @@ body{
     width: 100%;
     height: 100%;
     font-size: 0;
-    margin-bottom: 220px; /* footer area + a bit of space*/
+    margin-bottom: 200px; /* footer area */
 }
 
 header{
@@ -97,6 +97,13 @@ header{
     width: 100%;
     height: 350px;
     text-align: center;
+}
+
+#footer-divider{
+    position: relative;
+    height: 40px;
+    box-shadow:0 10px 10px -15px #505050;
+    margin:auto;
 }
 
 footer{
