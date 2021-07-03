@@ -81,10 +81,11 @@ nav>ul>li>a:hover{
 }
 
 #subnav{
+    display: inline-block;
     position: sticky;
     vertical-align: top;
+    margin-top: 10px;
     top: 100px;
-    display: inline-block;
     width: 120px;
 }
 
@@ -95,7 +96,7 @@ nav>ul>li>a:hover{
 
 #subnav>ul>li>a{
     height: 40px;
-    padding: 8px 10px 0 10px;
+    padding: 10px;
     font-size: 20px;
     white-space: nowrap;
     transition: 250ms;
