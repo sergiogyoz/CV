@@ -56,6 +56,4 @@ function addSectionsFromJSON(url, section_method){
 
 
 
-
-
 export {simpleContent, addSectionsFromJSON, addSection}
