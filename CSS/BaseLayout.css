@@ -55,6 +55,13 @@ a{
     color: #505050;
 }
 
+svg.social-network-icons{
+    width: 32px;
+    height: 32px;
+    color:#aa7b2b;
+    fill:#aa7b2b;
+}
+
 html{
     scroll-behavior: smooth;
     box-sizing: border-box;
@@ -76,7 +83,7 @@ body{
     width: 100%;
     height: 100%;
     font-size: 0;
-    margin-bottom: 200px; /* footer area */
+    margin-bottom: 1000px; /* footer area */
 }
 
 header{
@@ -103,14 +110,25 @@ header{
     position: relative;
     height: 40px;
     box-shadow:0 10px 10px -15px #505050;
-    margin:auto;
+    margin: auto;
 }
 
 footer{
     position: absolute;
-    bottom: -220px;
-    height: 200px;
+    bottom: -1000px;
+    height: 1000px;
     width: 100%;
+}
+
+ul.social-networks{
+    margin: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+ul.social-networks>li{
+    display: inline-block;
+    margin: 0 20px 0 20px;
 }
 
 #nav-bar-background{
