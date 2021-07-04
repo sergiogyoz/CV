@@ -1,8 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Sergio Villamarin</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--meta SEO tags-->
+        <title>Sergio Villamarin (sergiogyoz), applied mathematician and programmer</title>
+        <meta name="description" content="I'm Sergio Villamarin (sergiogyoz), applied mathematician, statistician, programmer, amateur gamedev/web designer and here's my work">
+        <link rel="canonical" href="https://sergiogyoz.github.io/CV/">
+        <!-- google verification -->
+        <meta name="google-site-verification" content="XRSwsYltNYDxEiuOpcflsZ3oP1a6HKQTlkxA4ryQGAw" />
+        <!--open graph protocol for social media sharing-->
+        <meta property="og:title" content="Sergio Villamarin" />
+        <meta property="og:url" content="https://sergiogyoz.github.io/CV/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/images/profile_picture.jpg" />
+        <meta property="og:description" content="Applied mathematician, statistician, programmer, amateur gamedev/web designer. You can find all my work here." />
+        <!--my stuff-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link href="CSS/BaseLayout.css" type="text/css" rel="stylesheet"/>
         <link href="CSS/SmallDisplays.css" type="text/css" rel="stylesheet"/>
         <link href="CSS/LargeDisplays.css" media="screen and (min-width: 1080px)" type="text/css" rel="stylesheet"/>
@@ -12,7 +24,7 @@
 
 <body class="light-background">
     <header class="fade-in">
-        <div id="header-background" class="">
+        <div id="header-background">
             <h1 class="primary-font-color">Sergio Villamarin</h1>
         </div>
         <div id="menu-bar" class="ontop">
@@ -42,26 +54,38 @@
         <div id="sections">
             <div class="section" id="section1">
                 <div class="left">
-                    <h2>About me</h2>
-                    <p>
-                        Soy sergio, juego ajedrez y en vez de estudiar pierdo el tiempo aprendiendo web design. Contratame o te destruire.
-                    </p>
+                    <img src="/images/profile_picture.jpg" alt="Sergio Villamarin (sergiogyoz)" id="my-picture" class="fade-in picture-format">
                 </div>
                 <div class="right top-block-align">
-                    <div id="my-picture" class="fade-in picture-format"></div>
+                    <h2>About me</h2>
+                    <p>
+                        I'm a 4th year math PhD student at <a href="https://tulane.edu/">Tulane</a>. Previously worked on
+                        combinatorics, recently on statistics. My current research projects 
+                        include filtering and applying statistical models to hydrological data and familiarizing with 
+                        <a href="https://landlab.readthedocs.io/en/master/">landlab's</a> framework to possibly develop 
+                        new components.
+                    </p>
                 </div>
             </div>
             <div class="section" id="section2">
-                <h2>Importantes sections</h2>
+                <h2>Interests</h2>
                 <p>
-                    El contenido de mi pagina web es demasiado aspero para ser apreciado por el observador comun
+                    Aside from my research, I'm actively learning new topics and skills of my interest. Among those,
+                    some professionally relevant are:
                 </p>
+                <ul>
+                    <li>Programming (Python, C++, C#, Matlab, R, Mathematica).</li>
+                    <li>Basic knowledge of algorithms and implementation.</li>
+                    <li>Basic understanding of software architecture and some paradigms.</li>
+                    <li>Web design and front-end development (HTML, CSS, JS).</li>
+                    <li>Game design (on Unity or Unreal engine).</li>
+                </ul>
             </div>
         </div>
         <div id="subnav">
             <ul>
                 <li><a class="subcurrent" href="#section1">About me</a></li>
-                <li><a href="#section2">Importantes cosas</a></li>
+                <li><a href="#section2">Intesrest</a></li>
             </ul>
         </div>
     </div>
@@ -75,7 +99,10 @@
                     <li><a href="https://twitter.com/sergiovillamar7"><svg class="social-network-icons" id="twitter" xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.5 8.778c-.441.196-.916.328-1.414.388.509-.305.898-.787 1.083-1.362-.476.282-1.003.487-1.564.597-.448-.479-1.089-.778-1.796-.778-1.59 0-2.758 1.483-2.399 3.023-2.045-.103-3.86-1.083-5.074-2.572-.645 1.106-.334 2.554.762 3.287-.403-.013-.782-.124-1.114-.308-.027 1.14.791 2.207 1.975 2.445-.346.094-.726.116-1.112.042.313.978 1.224 1.689 2.3 1.709-1.037.812-2.34 1.175-3.647 1.021 1.09.699 2.383 1.106 3.773 1.106 4.572 0 7.154-3.861 6.998-7.324.482-.346.899-.78 1.229-1.274z"/></svg></a></li>
                     <li><a href="https://discord.gg/7w55g2VUXN"><svg class="social-network-icons" id="discord" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm2.784 15.584h-6.804c-.678 0-1.23-.552-1.23-1.236v-8.112c0-.684.552-1.236 1.23-1.236h8.04c.678 0 1.23.552 1.23 1.236v10.764l-1.29-1.14-.726-.672-.768-.714.318 1.11zm-1.08-2.748c1.326-.042 1.836-.912 1.836-.912 0-1.932-.864-3.498-.864-3.498-.864-.648-1.686-.63-1.686-.63l-.084.096c1.02.312 1.494.762 1.494.762-.624-.342-1.236-.51-1.806-.576-.432-.048-.846-.036-1.212.012l-.102.012c-.21.018-.72.096-1.362.378l-.354.174s.498-.474 1.578-.786l-.06-.072s-.822-.018-1.686.63c0 0-.864 1.566-.864 3.498 0 0 .504.87 1.83.912l.402-.498c-.762-.228-1.05-.708-1.05-.708l.168.102.024.018.024.013.006.004.024.013c.15.084.3.15.438.204.246.096.54.192.882.258.45.084.978.114 1.554.006.282-.048.57-.132.87-.258.21-.078.444-.192.69-.354 0 0-.3.492-1.086.714l.396.486zm-2.79-2.802c-.342 0-.612.3-.612.666 0 .366.276.666.612.666.342 0 .612-.3.612-.666.006-.366-.27-.666-.612-.666zm2.19 0c-.342 0-.612.3-.612.666 0 .366.276.666.612.666.342 0 .612-.3.612-.666 0-.366-.27-.666-.612-.666z"/></svg></a></li>
                 </ul>
-
+                <p>
+                    <svg class="social-network-icons" id="mail" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.135-3.868-3.135-8.11 8.848h23.956l-8.11-8.848z"/></svg>
+                    Contact me: svillamaringomez *at* tulane *dot* com 
+                </p>
                 <ul class="social-networks">
                     <li><a href="https://github.com/sergiogyoz"><svg class="social-network-icons" id="github" xmlns="http://www.w3.org/2000/svg"    viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 6c-3.313 0-6 2.686-6 6 0 2.651 1.719 4.9 4.104 5.693.3.056.396-.13.396-.289v-1.117c-1.669.363-2.017-.707-2.017-.707-.272-.693-.666-.878-.666-.878-.544-.373.041-.365.041-.365.603.042.92.619.92.619.535.917 1.403.652 1.746.499.054-.388.209-.652.381-.802-1.333-.152-2.733-.667-2.733-2.965 0-.655.234-1.19.618-1.61-.062-.153-.268-.764.058-1.59 0 0 .504-.161 1.65.615.479-.133.992-.199 1.502-.202.51.002 1.023.069 1.503.202 1.146-.776 1.648-.615 1.648-.615.327.826.121 1.437.06 1.588.385.42.617.955.617 1.61 0 2.305-1.404 2.812-2.74 2.96.216.186.412.551.412 1.111v1.646c0 .16.096.347.4.288 2.383-.793 4.1-3.041 4.1-5.691 0-3.314-2.687-6-6-6z"/></svg></a></li>
                     <li><a href="https://www.researchgate.net/profile/Sergio-Villamarin-Gomez"><svg class="social-network-icons" id="researchgate" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"  fill-rule="evenodd" clip-rule="evenodd"><path d="M32.04 15.97c0,8.85 -7.18,16.03 -16.02,16.03 -8.85,0 -16.02,-7.18 -16.02,-16.03 0,-8.85 7.17,-16.03 16.02,-16.03 8.84,0 16.02,7.18 16.02,16.03zm-14.79 7c-1.43,-0.28 -2.28,-1.11 -4.45,-4.33 -0.72,-1.08 -0.72,-1.08 -1.42,-1.13 -1.03,-0.07 -0.95,-0.25 -0.92,2.02 0.04,2.58 0.01,2.52 1.5,2.77 0.39,0.06 0.42,0.09 0.42,0.32 0,0.26 0,0.26 -2.62,0.28 -2.46,0.02 -2.62,0.01 -2.67,-0.14 -0.1,-0.29 0.05,-0.43 0.59,-0.53 0.61,-0.11 0.93,-0.36 1.01,-0.78 0.04,-0.16 0.05,-2.32 0.03,-4.8 -0.03,-5.21 0.03,-4.9 -0.93,-5.11 -0.6,-0.13 -0.79,-0.27 -0.71,-0.51 0.06,-0.16 0.19,-0.17 2.92,-0.22 4.06,-0.08 4.82,0.05 5.9,1.01 1.13,1.01 1.29,2.55 0.39,3.84 -0.4,0.58 -1.2,1.2 -1.82,1.43 -0.29,0.11 -0.53,0.23 -0.53,0.27 0,0.12 0.92,1.43 1.49,2.13 1.52,1.85 2.34,2.57 3.19,2.79 0.53,0.14 0.68,0.29 0.53,0.55 -0.16,0.27 -0.96,0.33 -1.9,0.14zm-3.83 -6.63c2,-0.82 2.15,-3.57 0.25,-4.38 -0.49,-0.21 -0.62,-0.22 -1.85,-0.22 -1.33,0 -1.33,0 -1.35,2.31 -0.02,1.27 -0.01,2.37 0.02,2.43 0.09,0.21 2.34,0.1 2.93,-0.14zm6.97 -2.85c-1.55,-0.29 -2.06,-1.24 -1.98,-3.68 0.04,-1.35 0.15,-1.72 0.67,-2.28 0.92,-0.99 3.2,-0.9 4.04,0.16 0.36,0.45 0.33,0.59 -0.17,0.74 -0.39,0.13 -0.39,0.13 -0.75,-0.23 -0.85,-0.82 -2.32,-0.52 -2.58,0.54 -0.13,0.47 -0.12,2.46 0.01,2.91 0.35,1.27 2.46,1.27 2.82,0 0.22,-0.81 0.17,-0.87 -0.8,-0.92 -0.47,-0.02 -0.47,-0.02 -0.47,-0.41 0,-0.38 0,-0.38 1.12,-0.41 1.45,-0.03 1.43,-0.05 1.36,1.01 -0.09,1.33 -0.45,1.97 -1.32,2.35 -0.57,0.24 -1.35,0.33 -1.95,0.22z"/></svg></a></li>
@@ -85,8 +112,6 @@
             </div>
             
         </div>
-        
-        <svg class="social-network-icons" id="mail" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.135-3.868-3.135-8.11 8.848h23.956l-8.11-8.848z"/></svg>
     </footer>
     
 </body>

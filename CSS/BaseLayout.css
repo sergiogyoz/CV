@@ -161,7 +161,16 @@ h2{
     margin: 10px auto 10px auto;
 }
 
-p{
+.section>ul>li::before{
+    content: "- ";
+}
+
+.section>ul>li{
+    text-indent: 40px;
+    margin: 10px 0 10px 0;
+}
+
+p,.section>ul>li{
     font-family: "Open-Sans";
     font-size: 18px;
     line-height: 1.5em;
@@ -203,7 +212,8 @@ p>a{
 }
 
 #my-picture{
-    background-image: url(../images/profile_picture.jpg);
+    display: block;
+    object-fit: cover;
 }
 
 .ontop{
