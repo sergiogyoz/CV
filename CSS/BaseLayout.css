@@ -160,8 +160,9 @@ h2{
     margin: 10px auto 10px auto;
 }
 
-.section>ul>li::before{
-    content: "- ";
+.section>ul{
+    list-style-position: inside;
+    list-style-type: disc;
 }
 
 .section>ul>li{
