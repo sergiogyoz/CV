@@ -52,9 +52,16 @@ h1{
 
 nav{
     position: fixed;
-    display: inline-block;
+    display: block;
     width: 100%;
     top: 0;
+    height: 60px;
+    box-shadow:0 0 10px -10px #50505099;
+    transition: 0.5s;
+}
+
+nav.transition{
+    box-shadow:0 0 10px -7px #505050;
     height: 40px;
 }
 
@@ -63,6 +70,7 @@ nav>ul>li{
     display: inline-block;
     height: 40px;
     padding: 0px;
+    padding-top: inherit;
     width: initial;
     text-align: center;
     opacity: initial;
@@ -112,10 +120,6 @@ a.current{
 
 a.subcurrent{
     font-family: "Lato";
-}
-
-#my-picture{
-
 }
 
 .left{
