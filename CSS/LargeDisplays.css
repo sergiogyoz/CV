@@ -128,6 +128,7 @@ a.subcurrent{
     left: 0;
     width: 50%;
     padding: 20px;
+    vertical-align: top;
 }
 
 .right{
@@ -136,8 +137,32 @@ a.subcurrent{
     right: 0;
     width: 50%;
     padding: 20px;
+    vertical-align: top; 
 }
 
-.top-block-align{  vertical-align: top;  }
-.bottom-block-align{  vertical-align: bottom;  }
+.list>li{
+    text-indent: 1.5em;
+}
 
+ul.social-networks>li>a>svg.icons{
+    width: 24px;
+    height: 24px;
+}
+
+.one4th{
+    display: inline-block;   
+    width: 25%;
+    vertical-align: top; 
+}
+
+.onehalf{
+    display: inline-block;   
+    width: 50%;   
+}
+#mail{
+    display: none;
+}
+
+.smalltext{
+    font-size: 16px;
+}

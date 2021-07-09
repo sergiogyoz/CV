@@ -88,3 +88,24 @@ nav>ul>li{
     width: 300px;
     height: 300px;
 }
+
+.columnblock{
+    padding: 10px 30px 10px 30px;
+}
+
+.list>li{
+    text-indent: 0.5em;
+}
+
+ul.social-networks>li>a>svg.icons{
+    width: 32px;
+    height: 32px;
+}
+
+#contact-me{
+    text-align: center;
+}
+
+h3{
+    padding: 10px;
+}
