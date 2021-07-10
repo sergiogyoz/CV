@@ -37,7 +37,7 @@ header{
 
 .fade-in{
     animation: fadein;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
 }
 
 @keyframes fadein{

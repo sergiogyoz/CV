@@ -191,6 +191,7 @@ p>a{
     background-position: center;
     background-size: cover;
     border-radius: 3px;
+    object-fit: cover;
     box-shadow: 0 0 10px -5px #505050;
 }
 
@@ -206,7 +207,7 @@ p>a{
 
 #my-picture{
     display: block;
-    object-fit: cover;
+    background-color: blue;
 }
 
 .ontop{

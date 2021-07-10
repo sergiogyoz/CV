@@ -54,7 +54,16 @@
         <div id="sections">
             <div class="section" id="s1">
                 <div class="left">
-                    <img src="./images/profile_picture.jpg" alt="Sergio Villamarin (sergiogyoz)" id="my-picture" class="fade-in picture-format">
+                    <img class="fade-in picture-format"
+                    srcset=
+                    "./images/profile_picture_300.jpg,
+                    ./images/profile_picture_375.jpg 1.25x,
+                    ./images/profile_picture_450.jpg 1.5x,
+                    ./images/profile_picture_600.jpg 2x,
+                    ./images/profile_picture_original.jpg 5x"
+                    src="./images/profile_picture_450.jpg"
+                    alt="Sergio Villamarin (sergiogyoz)" 
+                    id="my-picture">
                 </div>
                 <div class="right top-block-align">
                     <h2>About me</h2>

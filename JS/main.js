@@ -33,9 +33,7 @@ window.addEventListener("scroll", function(){
 
 function updateSubnav(){ //updates subnav
     for(let i=0; i<spositions.length-1;i++){
-        console.log(subnav[i]);
         if(spositions[i]<=window.scrollY && window.scrollY<spositions[i+1]){
-            console.log("hola")
             if(currentsection!=subnav[i]){
                 try{
                     currentsection.firstElementChild.classList.remove("subcurrent");
@@ -45,7 +43,6 @@ function updateSubnav(){ //updates subnav
                 }
                 subnav[i].firstElementChild.classList.add("subcurrent");
                 currentsection=subnav[i];
-                console.log(subnav[i]);
             }
         }
     }
