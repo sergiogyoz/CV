@@ -144,9 +144,23 @@ a.subcurrent{
     text-indent: 1.5em;
 }
 
+#contact-me{
+    text-align: left;
+}
+
+ul.social-networks{
+    margin: 10px 0 10px 0;
+    display: inline-block;
+    justify-content: left;
+}
+
+ul.social-networks>li{
+    margin: 0 0 0 10px;
+}
+
 ul.social-networks>li>a>svg.icons{
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
 }
 
 .one4th{

@@ -122,7 +122,6 @@ ul.social-networks{
 
 ul.social-networks>li{
     display: inline-block;
-    margin: 0 20px 0 20px;
 }
 
 ul.social-networks>li>a>svg.icons{
@@ -174,15 +173,14 @@ h2{
     content: "\2022\a0\a0";
 }
 
-p,.section>ul>li{
+p,a.content-link,.section>ul>li{
     font-family: "Open-Sans";
     font-size: 18px;
     line-height: 1.5em;
     overflow-wrap: break-word;
 }
 
-p>a{
-    font-family: inherit;
+a.content-link{
     text-decoration: underline;
 }
 
