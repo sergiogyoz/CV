@@ -180,7 +180,15 @@ p,a.content-link,.section>ul>li{
     overflow-wrap: break-word;
 }
 
+p{
+    margin-top: 1.5em;
+}
+
 a.content-link{
+    text-decoration: underline;
+}
+
+a.recent-updates:hover{
     text-decoration: underline;
 }
 
