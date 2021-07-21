@@ -17,7 +17,7 @@ header{
     height: 40px;
 }
 
-#open-nav-button{
+#mobile-menu-layout{
     display: none;
 }
 
@@ -50,7 +50,7 @@ h1{
     padding-top: 90px;
 }
 
-nav{
+#menu{
     position: fixed;
     display: block;
     width: 100%;
@@ -60,12 +60,12 @@ nav{
     transition: 0.5s;
 }
 
-nav.transition{
+#menu.transition{
     box-shadow:0 0 10px -7px #505050;
     height: 40px;
 }
 
-nav>ul>li{
+#menu>ul>li{
     position: relative;
     display: inline-block;
     height: 40px;
@@ -77,14 +77,14 @@ nav>ul>li{
     background-color: initial;
 }
 
-nav>ul>li>a{
+#menu>ul>li>a{
     font-size: 20px;
     padding: 5px 10px 0 10px;
     height: 100%;
     transition: background-color 200ms;
 }
 
-nav>ul>li>a:hover{
+#menu>ul>li>a:hover{
     background-color: #afafaf30; /*color outside the baselayout*/
 }
 

@@ -6,7 +6,7 @@ header{
     height: 250px;
 }
 
-nav{
+#menu{
     display: none;
 }
 
@@ -19,64 +19,68 @@ h1{
     padding-top: 100px;
 }
 
-nav>ul>li{
-    height: 50px;
-    width: 100%;
-    padding-top: 10px;
-}
-
 #menu-bar{
     height: 60px;
 }
 
 #main-title{
-    width: 70%; /*Trick, not exactly centered but for small devices it seems indistinguishable*/
+    position: fixed;
+    top: 0;
+    width: 100%;
     height: 60px;
     padding-top: 10px;
     font-size: 28px;
     text-align: center;
 }
 
-.main-title-position{
+#mobile-menu-layout{
+    display: block;
     position: fixed;
-    top: 0;
-    left: 60px;
+    z-index: 10;
 }
 
 #open-nav-button{
     position: absolute;
-    left: 0;
-    width: 30px;
-    height: 30px;
-    margin: 15px;
-    opacity: 1;
-    border-radius: 10px;
-    transition: opacity 200ms;
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+    transform: translateY(-5px);
+    animation-name: glide;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    will-change: transform;
+
 }
 
-#open-nav-button:hover{
-    opacity: 0.7;
+@keyframes glide {
+    50%{ transform:  translateY(5px); }
 }
 
-.nav-icon-bar{
+#nav-button{
+    display: block;
     position: absolute;
-    width: 70%;
-    height: 10%;
-    left: 15%;
-    border-radius: 5px;
-    background-color: black;
+    width: 40px;
+    transform: translate(10px,10px);
+    height: auto;
+    transition: width 0.3s, margin 0.3s;
+    /* @keyframes duration | easing-function | delay |
+    iteration-count | direction | fill-mode | play-state | name */
 }
 
-.b1{
-    top: 20%;
+#nav-button:hover{
+    width: 50px;
+    margin: 5px auto 5px auto;
 }
 
-.b2{
-    top: 45%;
-}
+#circle-button{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #afafaf50;
+    border-radius: 25px;
+    transform: translate(5px,5px);
 
-.b3{
-    top: 70%;
 }
 
 #subnav{

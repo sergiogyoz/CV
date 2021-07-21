@@ -1,50 +1,34 @@
-const nav=document.getElementsByTagName("nav")[0];
-const subnav=document.getElementById("subnav").firstElementChild.children;
-const sections=document.getElementById("sections").children;
-let lineon=false;
-let currentsection;
-const spositions=[0];
+let mqScreenSize = window.matchMedia("(min-width: 1080px)");
 
-//find position of sections
-for(let section of sections){
-    const rect = section.getBoundingClientRect();
-    const Top = window.pageYOffset;
-    spositions.push(Top+(rect.top+rect.bottom)/2);
+if(mqScreenSize.matches) console.log("PS screen");
+else console.log("phone/tablet Screen");
+
+mqScreenSize.addEventListener("change",ScreenSizeChanged)
+
+import { topMenuTransitionEffect, updateSubnav} from "./PC.js"
+import * as mobile from "./mobile.js" 
+
+function ScreenSizeChanged(e){
+    if(e.matches){
+        updateSubnav();
+    }
+    else{
+
+    }
 }
-
-//current state updates from sudden load
-updateSubnav();
 
 //scrollevents
 window.addEventListener("scroll", function(){
-    //navigation transition effect when scroll down
-    if( !lineon && window.pageYOffset>150){
-        nav.classList.add("transition");
-        lineon= true;
+    
+    if(mqScreenSize.matches){//Big Screen behaviour
+        topMenuTransitionEffect();
+        updateSubnav();
     }
-    if( lineon && window.pageYOffset<150){
-        nav.classList.remove("transition");
-        lineon= false;
+    else{//Small Screen behaviour
+
     }
     //subnavigation highlight subnav section
-    updateSubnav()
+
 })
 
 
-function updateSubnav(){ //updates subnav
-    for(let i=0; i<spositions.length-1;i++){
-        if(spositions[i]<=window.scrollY && window.scrollY<spositions[i+1]){
-            if(currentsection!=subnav[i]){
-                try{
-                    currentsection.firstElementChild.classList.remove("subcurrent");
-                }
-                catch(e){
-                    if (!(e instanceof TypeError)) raise(e);
-                }
-                subnav[i].firstElementChild.classList.add("subcurrent");
-                currentsection=subnav[i];
-            }
-        }
-    }
-}
-//getBoundingClientRect()

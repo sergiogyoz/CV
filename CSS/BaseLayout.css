@@ -102,7 +102,7 @@ header{
 
 #footer-divider{
     position: relative;
-    height: 40px;
+    height: 100px;
     box-shadow:0 10px 10px -15px #505050;
     margin: auto;
 }
@@ -124,9 +124,6 @@ ul.social-networks>li{
     display: inline-block;
 }
 
-ul.social-networks>li>a>svg.icons{
-}
-
 svg.icons{
     fill: #aa7b2b;
 }
@@ -141,13 +138,13 @@ svg.icons{
     height: 100%;
 }
 
-nav>ul>li{
+#menu>ul>li{
     display: block;
     text-align: center;
 
 }
 
-nav>ul>li>a{
+#menu>ul>li>a{
     display: block;
 }
 
@@ -213,13 +210,11 @@ a.recent-updates:hover{
 
 #my-picture{
     display: block;
-    background-color: blue;
 }
 
 .ontop{
     z-index: 5; /*Prevents the nav bar from going behind objects when scrolling*/
 }
-
 .text{
     font-size: 18px;
 }

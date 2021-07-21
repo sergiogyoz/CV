@@ -1,7 +1,171 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <!--meta SEO tags-->
+        <title>Sergio Villamarin - sergiogyoz - mathematician and programmer</title>
+        <meta name="description" content="I'm Sergio Villamarin (sergiogyoz), applied mathematician, statistician, programmer, amateur gamedev/web designer and here's my work">
+        <link rel="canonical" href="https://sergiogyoz.github.io/CV/">
+        <!-- google verification -->
+        <meta name="google-site-verification" content="XRSwsYltNYDxEiuOpcflsZ3oP1a6HKQTlkxA4ryQGAw" />
+        <!--open graph protocol for social media sharing-->
+        <meta property="og:title" content="Sergio Villamarin" />
+        <meta property="og:url" content="https://sergiogyoz.github.io/CV/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://sergiogyoz.github.io/CV/images/profile_picture.jpg" />
+        <meta property="og:description" content="Applied mathematician, statistician, programmer, amateur gamedev/web designer. You can find all my work here." />
+        <!--my stuff-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link href="CSS/BaseLayout.css" type="text/css" rel="stylesheet"/>
+        <link href="CSS/SmallDisplays.css" type="text/css" rel="stylesheet"/>
+        <link href="CSS/LargeDisplays.css" media="screen and (min-width: 1080px)" type="text/css" rel="stylesheet"/>
+        
+        <script src="JS/main.js" type="module" defer></script>
+    </head>
 
+<body class="light-background">
+    <header class="fade-in">
+        <div id="header-background">
+            <h1 class="primary-font-color">Sergio Villamarin</h1>
+        </div>
+        <div id="menu-bar" class="ontop">
+            <div id="nav-bar-opacity"></div>
+            <div id="nav-bar-background" class="light-background"></div>
+            <div id="open-nav-button">
+                <div class="nav-icon-bar b1"></div>
+                <div class="nav-icon-bar b2"></div>
+                <div class="nav-icon-bar b3"></div>
+            </div>
+        </div>
+        <nav class="ontop">
+            <ul>
+                <li><a href="index.html" class="primary-font-color">About me</a></li>
+                <li><a href="index.html" class="primary-font-color current">Experience</a></li>
+                <li><a href="index.html" class="primary-font-color">Events</a></li>
+                <li><a href="index.html" class="primary-font-color">Research</a></li>
+                <li><a href="index.html" class="primary-font-color">Service</a></li>
+                <li><a href="GameBuild/index.html" class="primary-font-color">Projects</a></li>
+            </ul>
+        </nav>
+        <div id="main-title" class="ontop main-title-position primary-font-color">Experience</div>
+    </header>
 
-
-
+    <div id="content">
+        <div id="sections">
+            <div class="section" id="s1">
+                <div class="left">
+                    <img class="fade-in picture-format"
+                    srcset=
+                    "./images/profile_picture_300.jpg,
+                    ./images/profile_picture_375.jpg 1.25x,
+                    ./images/profile_picture_450.jpg 1.5x,
+                    ./images/profile_picture_600.jpg 2x,
+                    ./images/profile_picture_original.jpg 5x"
+                    src="./images/profile_picture_450.jpg"
+                    alt="Sergio Villamarin (sergiogyoz)" 
+                    id="my-picture">
+                </div>
+                <div class="right top-block-align">
+                    <h2>Education</h2>
+                    <p>
+                        I'm a 4th year math PhD student at 
+                        <a class="content-link" href="https://sse.tulane.edu/content/current-graduate-students">Tulane</a> currently
+                         working on statistics applied to hydrolocy and geomorphology with professor 
+                        <a class="content-link" href="https://sse.tulane.edu/eens/faculty/gasparini">Nicole Gasparini</a>. 
+                    </p>
+                </div>
+            </div>
+            <div class="section" id="s2">
+                <h2>Research</h2>
+                <p>
+                    Aside from my research, I'm actively learning new topics and skills I find interesting. Among those,
+                    some professionally relevant are:
+                </p>
+            </div>
+            <div class="section" id="s3">
+                <h2>Statistics</h2>
+                <p>
+                    The main projects I am currently working on are:  
+                </p>
+            </div>
+            <div class="section" id="s4">
+                <h2>Programming</h2>
+                <p>
+                    If you want a more interactive, and friendly version of this I recommend you navigate the website menu. 
+                </p>
+                <ul class="list">
+                    <li>
+                        <b>Pedagogy and Education:</b> I explain my interest and participation on educational projects. 
+                        <a>Expand</a>.
+                    </li>
+                </ul>
+            </div>
+            <div class="section" id="s5">
+                <h2>Web/Game development</h2>
+                <p>
+                    If you want a more interactive, and friendly version of this I recommend you navigate the website menu. 
+                </p>
+                <ul class="list">
+                    <li>
+                        <b>Pedagogy and Education:</b> I explain my interest and participation on educational projects. 
+                        <a>Expand</a>.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="subnav">
+            <ul>
+                <li><a href="#s1">Education</a></li>
+                <li><a href="#s2">Research</a></li>
+                <li><a href="#s3">Statistics</a></li>
+                <li><a href="#s4">Programming</a></li>
+                <li><a href="#s5">Web/Game development</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="footer-divider"></div>
+    <footer>
+        <div class="rowblock">
+            <div class="one4th columnblock">
+                <div class="smalltext" id="contact-me">
+                    <h3>Contact me</h3>
+                    <svg class="icons" id="mail" width="24" height="24" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.135-3.868-3.135-8.11 8.848h23.956l-8.11-8.848z"/></svg>
+                    svillamaringomez *at* tulane *dot* edu 
+                </div>
+                <ul class="social-networks">
+                    <li><a href="https://www.researchgate.net/profile/Sergio-Villamarin-Gomez"><svg class="icons" id="researchgate" viewBox="0 0 32 32"  fill-rule="evenodd" clip-rule="evenodd"><path d="M32.04 15.97c0,8.85 -7.18,16.03 -16.02,16.03 -8.85,0 -16.02,-7.18 -16.02,-16.03 0,-8.85 7.17,-16.03 16.02,-16.03 8.84,0 16.02,7.18 16.02,16.03zm-14.79 7c-1.43,-0.28 -2.28,-1.11 -4.45,-4.33 -0.72,-1.08 -0.72,-1.08 -1.42,-1.13 -1.03,-0.07 -0.95,-0.25 -0.92,2.02 0.04,2.58 0.01,2.52 1.5,2.77 0.39,0.06 0.42,0.09 0.42,0.32 0,0.26 0,0.26 -2.62,0.28 -2.46,0.02 -2.62,0.01 -2.67,-0.14 -0.1,-0.29 0.05,-0.43 0.59,-0.53 0.61,-0.11 0.93,-0.36 1.01,-0.78 0.04,-0.16 0.05,-2.32 0.03,-4.8 -0.03,-5.21 0.03,-4.9 -0.93,-5.11 -0.6,-0.13 -0.79,-0.27 -0.71,-0.51 0.06,-0.16 0.19,-0.17 2.92,-0.22 4.06,-0.08 4.82,0.05 5.9,1.01 1.13,1.01 1.29,2.55 0.39,3.84 -0.4,0.58 -1.2,1.2 -1.82,1.43 -0.29,0.11 -0.53,0.23 -0.53,0.27 0,0.12 0.92,1.43 1.49,2.13 1.52,1.85 2.34,2.57 3.19,2.79 0.53,0.14 0.68,0.29 0.53,0.55 -0.16,0.27 -0.96,0.33 -1.9,0.14zm-3.83 -6.63c2,-0.82 2.15,-3.57 0.25,-4.38 -0.49,-0.21 -0.62,-0.22 -1.85,-0.22 -1.33,0 -1.33,0 -1.35,2.31 -0.02,1.27 -0.01,2.37 0.02,2.43 0.09,0.21 2.34,0.1 2.93,-0.14zm6.97 -2.85c-1.55,-0.29 -2.06,-1.24 -1.98,-3.68 0.04,-1.35 0.15,-1.72 0.67,-2.28 0.92,-0.99 3.2,-0.9 4.04,0.16 0.36,0.45 0.33,0.59 -0.17,0.74 -0.39,0.13 -0.39,0.13 -0.75,-0.23 -0.85,-0.82 -2.32,-0.52 -2.58,0.54 -0.13,0.47 -0.12,2.46 0.01,2.91 0.35,1.27 2.46,1.27 2.82,0 0.22,-0.81 0.17,-0.87 -0.8,-0.92 -0.47,-0.02 -0.47,-0.02 -0.47,-0.41 0,-0.38 0,-0.38 1.12,-0.41 1.45,-0.03 1.43,-0.05 1.36,1.01 -0.09,1.33 -0.45,1.97 -1.32,2.35 -0.57,0.24 -1.35,0.33 -1.95,0.22z"/></svg></a></li>
+                    <li><a href="https://www.linkedin.com/in/sergio-villamarin-2920ba199"><svg class="icons" id="linkedin" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 8c0 .557-.447 1.008-1 1.008s-1-.45-1-1.008c0-.557.447-1.008 1-1.008s1 .452 1 1.008zm0 2h-2v6h2v-6zm3 0h-2v6h2v-2.861c0-1.722 2.002-1.881 2.002 0v2.861h1.998v-3.359c0-3.284-3.128-3.164-4-1.548v-1.093z"/></svg></a></li>
+                    <li><a href="https://scholar.google.com/citations?user=k9KRdAEAAAAJ&hl=en&oi=sra"><svg class="icons" id="googlescholar" viewBox="0 0 56.6934 56.6934"><path d="M28.4597,4.0154c-13.6006,0-24.625,11.0273-24.625,24.625c0,13.5996,11.0244,24.623,24.625,24.623  c13.5996,0,24.625-11.0234,24.625-24.623C53.0847,15.0426,42.0593,4.0154,28.4597,4.0154z M42.6077,33.8793  c-0.6971,2.4016-2.0137,4.6364-3.8595,6.3326c-1.7462,1.6122-3.9333,2.7168-6.2449,3.2488  c-2.5577,0.5821-5.2626,0.5976-7.8036-0.084c-2.0137-0.5356-3.9131-1.4954-5.5425-2.7948  c-1.7272-1.3727-3.1511-3.1237-4.1442-5.0933c-1.5282-3.0176-1.9982-6.5501-1.3239-9.8632  c0.2681-1.3298,0.7144-2.6226,1.3256-3.8339c1.7558-3.5151,4.9224-6.2962,8.6412-7.5694c3.3-1.1421,6.9968-1.1165,10.2748,0.09  c1.8207,0.6685,3.4871,1.726,4.9086,3.0414c-0.4755,0.5165-0.9914,0.9974-1.4823,1.5002c-0.936,0.9342-1.869,1.8719-2.8068,2.8043  c-0.9276-0.8859-2.0602-1.5591-3.2887-1.9321c-1.4454-0.4373-3.0021-0.4975-4.4785-0.1823  c-1.7242,0.3694-3.3245,1.2702-4.5554,2.5303c-0.9979,1.0104-1.7576,2.252-2.2139,3.5961c-0.6577,1.9071-0.653,4.0311-0.003,5.9399  c0.6357,1.8767,1.8737,3.5443,3.496,4.684c1.0146,0.7155,2.1776,1.2231,3.396,1.4662c1.1981,0.2425,2.4391,0.2163,3.6402,0.0114  c1.1934-0.2091,2.351-0.6488,3.3584-1.3262c1.6027-1.0706,2.7328-2.8097,3.054-4.7114c-2.7704-0.0012-5.5414-0.0006-8.3124,0  c-0.0035-1.9839-0.0005-3.9685-0.0012-5.953c4.7847-0.0006,9.5694-0.0018,14.3541,0.0005  C43.4728,28.4631,43.3679,31.2596,42.6077,33.8793z"/></svg></a></li>
+                </ul>
+                <ul class="social-networks">
+                    <li><a href="https://www.instagram.com/sergiogyoz/"><svg class="icons" id="instagram" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a></li>
+                    <li><a href="https://twitter.com/sergiovillamar7"><svg class="icons" id="twitter" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.5 8.778c-.441.196-.916.328-1.414.388.509-.305.898-.787 1.083-1.362-.476.282-1.003.487-1.564.597-.448-.479-1.089-.778-1.796-.778-1.59 0-2.758 1.483-2.399 3.023-2.045-.103-3.86-1.083-5.074-2.572-.645 1.106-.334 2.554.762 3.287-.403-.013-.782-.124-1.114-.308-.027 1.14.791 2.207 1.975 2.445-.346.094-.726.116-1.112.042.313.978 1.224 1.689 2.3 1.709-1.037.812-2.34 1.175-3.647 1.021 1.09.699 2.383 1.106 3.773 1.106 4.572 0 7.154-3.861 6.998-7.324.482-.346.899-.78 1.229-1.274z"/></svg></a></li>
+                </ul>
+                <ul class="social-networks">
+                    <!-- facebook <li><a href="https://www.facebook.com/sergio.villamarin.5/"><svg class="icons" id="facebook" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 10h-2v2h2v6h3v-6h1.82l.18-2h-2v-.833c0-.478.096-.667.558-.667h1.442v-2.5h-2.404c-1.798 0-2.596.792-2.596 2.308v1.692z"/></svg></a></li> -->
+                    <li><a href="https://github.com/sergiogyoz"><svg class="icons" id="github" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 6c-3.313 0-6 2.686-6 6 0 2.651 1.719 4.9 4.104 5.693.3.056.396-.13.396-.289v-1.117c-1.669.363-2.017-.707-2.017-.707-.272-.693-.666-.878-.666-.878-.544-.373.041-.365.041-.365.603.042.92.619.92.619.535.917 1.403.652 1.746.499.054-.388.209-.652.381-.802-1.333-.152-2.733-.667-2.733-2.965 0-.655.234-1.19.618-1.61-.062-.153-.268-.764.058-1.59 0 0 .504-.161 1.65.615.479-.133.992-.199 1.502-.202.51.002 1.023.069 1.503.202 1.146-.776 1.648-.615 1.648-.615.327.826.121 1.437.06 1.588.385.42.617.955.617 1.61 0 2.305-1.404 2.812-2.74 2.96.216.186.412.551.412 1.111v1.646c0 .16.096.347.4.288 2.383-.793 4.1-3.041 4.1-5.691 0-3.314-2.687-6-6-6z"/></svg></a></li>
+                    <li><a href="https://sergiogyoz.itch.io/"><svg class="icons" viewBox="0 0 245.371 220.736"><path d="M31.99 1.365C21.287 7.72.2 31.945 0 38.298v10.516C0 62.144 12.46 73.86 23.773 73.86c13.584 0 24.902-11.258 24.903-24.62 0 13.362 10.93 24.62 24.515 24.62 13.586 0 24.165-11.258 24.165-24.62 0 13.362 11.622 24.62 25.207 24.62h.246c13.586 0 25.208-11.258 25.208-24.62 0 13.362 10.58 24.62 24.164 24.62 13.585 0 24.515-11.258 24.515-24.62 0 13.362 11.32 24.62 24.903 24.62 11.313 0 23.773-11.714 23.773-25.046V38.298c-.2-6.354-21.287-30.58-31.988-36.933C180.118.197 157.056-.005 122.685 0c-34.37.003-81.228.54-90.697 1.365zm65.194 66.217a28.025 28.025 0 0 1-4.78 6.155c-5.128 5.014-12.157 8.122-19.906 8.122a28.482 28.482 0 0 1-19.948-8.126c-1.858-1.82-3.27-3.766-4.563-6.032l-.006.004c-1.292 2.27-3.092 4.215-4.954 6.037a28.5 28.5 0 0 1-19.948 8.12c-.934 0-1.906-.258-2.692-.528-1.092 11.372-1.553 22.24-1.716 30.164l-.002.045c-.02 4.024-.04 7.333-.06 11.93.21 23.86-2.363 77.334 10.52 90.473 19.964 4.655 56.7 6.775 93.555 6.788h.006c36.854-.013 73.59-2.133 93.554-6.788 12.883-13.14 10.31-66.614 10.52-90.474-.022-4.596-.04-7.905-.06-11.93l-.003-.045c-.162-7.926-.623-18.793-1.715-30.165-.786.27-1.757.528-2.692.528a28.5 28.5 0 0 1-19.948-8.12c-1.862-1.822-3.662-3.766-4.955-6.037l-.006-.004c-1.294 2.266-2.705 4.213-4.563 6.032a28.48 28.48 0 0 1-19.947 8.125c-7.748 0-14.778-3.11-19.906-8.123a28.025 28.025 0 0 1-4.78-6.155 27.99 27.99 0 0 1-4.736 6.155 28.49 28.49 0 0 1-19.95 8.124c-.27 0-.54-.012-.81-.02h-.007c-.27.008-.54.02-.813.02a28.49 28.49 0 0 1-19.95-8.123 27.992 27.992 0 0 1-4.736-6.155zm-20.486 26.49l-.002.01h.015c8.113.017 15.32 0 24.25 9.746 7.028-.737 14.372-1.105 21.722-1.094h.006c7.35-.01 14.694.357 21.723 1.094 8.93-9.747 16.137-9.73 24.25-9.746h.014l-.002-.01c3.833 0 19.166 0 29.85 30.007L210 165.244c8.504 30.624-2.723 31.373-16.727 31.4-20.768-.773-32.267-15.855-32.267-30.935-11.496 1.884-24.907 2.826-38.318 2.827h-.006c-13.412 0-26.823-.943-38.318-2.827 0 15.08-11.5 30.162-32.267 30.935-14.004-.027-25.23-.775-16.726-31.4L46.85 124.08C57.534 94.073 72.867 94.073 76.7 94.073zm45.985 23.582v.006c-.02.02-21.863 20.08-25.79 27.215l14.304-.573v12.474c0 .584 5.74.346 11.486.08h.006c5.744.266 11.485.504 11.485-.08v-12.474l14.304.573c-3.928-7.135-25.79-27.215-25.79-27.215v-.006l-.003.002z" /></svg></a></li>
+                    <li><a href="https://discord.gg/7w55g2VUXN"><svg class="icons" id="discord" viewBox="0 0 24 24" fill-rule="evenodd"        clip-rule="evenodd"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm2.784 15.584h-6.804c-.678 0-1.23-.552-1.23-1.236v-8.112c0-.684.552-1.236 1.23-1.236h8.04c.678 0 1.23.552 1.23 1.236v10.764l-1.29-1.14-.726-.672-.768-.714.318 1.11zm-1.08-2.748c1.326-.042 1.836-.912 1.836-.912 0-1.932-.864-3.498-.864-3.498-.864-.648-1.686-.63-1.686-.63l-.084.096c1.02.312 1.494.762 1.494.762-.624-.342-1.236-.51-1.806-.576-.432-.048-.846-.036-1.212.012l-.102.012c-.21.018-.72.096-1.362.378l-.354.174s.498-.474 1.578-.786l-.06-.072s-.822-.018-1.686.63c0 0-.864 1.566-.864 3.498 0 0 .504.87 1.83.912l.402-.498c-.762-.228-1.05-.708-1.05-.708l.168.102.024.018.024.013.006.004.024.013c.15.084.3.15.438.204.246.096.54.192.882.258.45.084.978.114 1.554.006.282-.048.57-.132.87-.258.21-.078.444-.192.69-.354 0 0-.3.492-1.086.714l.396.486zm-2.79-2.802c-.342 0-.612.3-.612.666 0 .366.276.666.612.666.342 0 .612-.3.612-.666.006-.366-.27-.666-.612-.666zm2.19 0c-.342 0-.612.3-.612.666 0 .366.276.666.612.666.342 0 .612-.3.612-.666 0-.366-.27-.666-.612-.666z"/></svg></a></li>
+                </ul>
+            </div>
+             <div class="onehalf smalltext columnblock">
+                <h3>Recent updates</h3>
+                <ul class="list">
+                    <li><a class=recent-updates href="https://github.com/sergiogyoz/water_levels">
+                        WaterLevels class has been split into packages! I'm able to proceess data and make some basic plots a lot faster.
+                    </a></li>
+                    <li><a class=recent-updates href="index.html">
+                        I added more responsiveness to my webpage (you probably can't notice... but your subconscious may).
+                    </a></li>
+                    <li><a class=recent-updates href="https://sergiogyoz.itch.io/color-join">
+                        Colorjoin, the game, will be updated soon to actually be a fully functional game.
+                    </a></li>
+                </ul>
+            </div>
+            <div class="one4th columnblock smalltext">
+                Para informacion en espaniol marque 1.
+            </div>
+        </div>
+    </footer>
+    
+</body>
 </html>
