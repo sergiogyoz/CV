@@ -17,11 +17,11 @@ for(let section of sections){
 updateSubnav();
 
 function topMenuTransitionEffect(){ //Shadow effect on TopMenu
-    if( !lineon && window.pageYOffset>200){
+    if( !lineon && window.pageYOffset>250){
         nav.classList.add("transition");
         lineon= true;
     }
-    if( lineon && window.pageYOffset<200){
+    if( lineon && window.pageYOffset<250){
         nav.classList.remove("transition");
         lineon= false;
     }

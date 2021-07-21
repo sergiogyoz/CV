@@ -55,14 +55,12 @@ h1{
     display: block;
     width: 100%;
     top: 0;
-    height: 60px;
-    box-shadow:0 0 10px -10px #50505099;
+    height: 40px;
     transition: 0.5s;
 }
 
 #menu.transition{
     box-shadow:0 0 10px -7px #505050;
-    height: 40px;
 }
 
 #menu>ul>li{
