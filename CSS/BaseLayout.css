@@ -139,12 +139,11 @@ svg.icons{
 }
 
 #menu>ul>li{
-    display: block;
     text-align: center;
 
 }
 
-#menu>ul>li>a{
+#menu>ul>li,#menu>ul>li>a,#mobile-menu>ul>li>a,#mobile-menu>ul>li{
     display: block;
 }
 

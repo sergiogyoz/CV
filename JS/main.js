@@ -1,34 +1,29 @@
 let mqScreenSize = window.matchMedia("(min-width: 1080px)");
+let PCimported=false;
+let mobileimported=false;
 
-if(mqScreenSize.matches) console.log("PS screen");
-else console.log("phone/tablet Screen");
+if(mqScreenSize.matches){
+    console.log("PC screen");
+    await import("./PC.js");
+}
+else{
+    console.log("phone/tablet Screen");
+    await import("./mobile.js");
+}
+
 
 mqScreenSize.addEventListener("change",ScreenSizeChanged)
-
-import { topMenuTransitionEffect, updateSubnav} from "./PC.js"
-import * as mobile from "./mobile.js" 
-
+//Function that handles the screen size changed
 function ScreenSizeChanged(e){
-    if(e.matches){
-        updateSubnav();
+    if(e.matches){//to PC
+        console.log("loading PC version");
+        (async()=>{await import("./PC.js");})();
     }
-    else{
-
+    else{//to mobile
+        (async()=>{await import("./mobile.js");})();
     }
 }
 
-//scrollevents
-window.addEventListener("scroll", function(){
-    
-    if(mqScreenSize.matches){//Big Screen behaviour
-        topMenuTransitionEffect();
-        updateSubnav();
-    }
-    else{//Small Screen behaviour
 
-    }
-    //subnavigation highlight subnav section
-
-})
 
 

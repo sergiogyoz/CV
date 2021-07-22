@@ -16,6 +16,13 @@ for(let section of sections){
 //current state updates from sudden load
 updateSubnav();
 
+//page scroll events
+window.addEventListener("scroll", function(){
+        topMenuTransitionEffect();
+        updateSubnav();
+})
+
+
 function topMenuTransitionEffect(){ //Shadow effect on TopMenu
     if( !lineon && window.pageYOffset>250){
         nav.classList.add("transition");

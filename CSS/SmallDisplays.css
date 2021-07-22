@@ -42,15 +42,13 @@ h1{
 #open-nav-button{
     position: absolute;
     z-index: 10;
-    width: 60px;
-    height: 60px;
+    background-color: black;
     transform: translateY(-5px);
     animation-name: glide;
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     will-change: transform;
-
 }
 
 @keyframes glide {
@@ -63,12 +61,7 @@ h1{
     width: 35px;
     transform: translate(15px,15px);
     height: auto;
-    transition: width 0.3s, margin 0.3s;
-}
-
-#nav-button:hover{
-    width: 50px;
-    margin: 5px auto 5px auto;
+    transition: width 0.3s, height 0.3s;
 }
 
 #circle-button{
@@ -78,6 +71,27 @@ h1{
     background-color: #afafaf30;
     border-radius: 25px;
     transform: translate(10px,10px);
+    transition: width 0.3s, height 0.3s;
+}
+
+#mobile-menu{
+    position: relative;
+    width: 200px;
+    transform: translate(-50px,-80px) scale(0);
+    will-change: transform;
+    transition: transform 0.2s;
+}
+#mobile-menu:hover{
+    transform: translate(60px,60px) scale(1);
+}
+
+#mobile-menu>ul>li>a{
+    height: 50px;
+    padding: 8px 0 0 5px;
+    font-size: 20px;
+    border: 1px #afafaf50;
+    border-bottom-style: solid;
+    border-right-style: solid;
 }
 
 #subnav{
