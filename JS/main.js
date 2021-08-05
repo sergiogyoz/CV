@@ -20,6 +20,7 @@ function ScreenSizeChanged(e){
         (async()=>{await import("./PC.js");})();
     }
     else{//to mobile
+        console.log("loading mobile version");
         (async()=>{await import("./mobile.js");})();
     }
 }
