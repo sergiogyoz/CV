@@ -101,7 +101,7 @@ h1{
 .picture-format{
     margin: 20px auto 20px auto;
     width: 300px;
-    height: 300px;
+    height: auto;
 }
 
 .columnblock{

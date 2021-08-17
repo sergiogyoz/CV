@@ -11,9 +11,8 @@ else{
     await import("./mobile.js");
 }
 
-
 mqScreenSize.addEventListener("change",ScreenSizeChanged)
-//Function that handles the screen size changed
+//Function that handles when the screen size changed
 function ScreenSizeChanged(e){
     if(e.matches){//to PC
         console.log("loading PC version");
