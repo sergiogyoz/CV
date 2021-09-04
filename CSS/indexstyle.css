@@ -1,0 +1,18 @@
+button.show{
+    cursor: pointer;
+    border-style: none;
+    background-color: #afafaf50;
+}
+
+button.show:hover{
+    background-color: #afafaf;
+}
+
+.expand{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 0px;
+    border: none;
+    transition: height 0.3s ease-out;
+}

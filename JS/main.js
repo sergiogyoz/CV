@@ -1,6 +1,4 @@
 let mqScreenSize = window.matchMedia("(min-width: 1080px)");
-let PCimported=false;
-let mobileimported=false;
 
 if(mqScreenSize.matches){
     console.log("PC screen");
@@ -23,6 +21,8 @@ function ScreenSizeChanged(e){
         (async()=>{await import("./mobile.js");})();
     }
 }
+
+
 
 
 

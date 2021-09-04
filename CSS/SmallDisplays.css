@@ -45,7 +45,7 @@ h1{
     background-color: black;
     transform: translateY(-5px);
     animation-name: glide;
-    animation-duration: 5s;
+    animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     will-change: transform;
