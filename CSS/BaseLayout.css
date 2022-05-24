@@ -4,23 +4,25 @@
 }
 
 @font-face{
-    font-family: "Lato";
-    src: url(../fonts/Lato-Italic.ttf) format('truetype');
+    font-family: "Work_Sans";
+    src: url(../fonts/WorkSans-Light.ttf) format('truetype');
     font-weight: normal;
-    font-style: italic;
 }
 
 @font-face{
-    font-family: "Lato-Light";
-    src: url(../fonts/Lato-LightItalic.ttf) format('truetype');
-    font-weight: lighter;
-    font-style: italic;
+    font-family: "Work_Sans_bold";
+    src: url(../fonts/WorkSans-Regular.ttf) format('truetype');
+    font-weight: normal;
 }
 
+
 a,h1,h2,h3,#main-title{
-    font-family: "Lato-Light";
+    font-family: "Work_Sans";
     font-weight: lighter;
-    font-style: italic;
+}
+
+.smalltitle{
+    font-family: "Work_Sans_bold";
 }
 
 a{
@@ -191,6 +193,10 @@ a.content-link{
 
 #recent-updates{
     height: 200px;
+}
+
+a.recent-update{
+    display: inline-block;
 }
 
 a.recent-update:hover{
