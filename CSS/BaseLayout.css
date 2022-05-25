@@ -4,23 +4,25 @@
 }
 
 @font-face{
-    font-family: "Lato";
-    src: url(../fonts/Lato-Italic.ttf) format('truetype');
+    font-family: "Work_Sans";
+    src: url(../fonts/WorkSans-Light.ttf) format('truetype');
     font-weight: normal;
-    font-style: italic;
 }
 
 @font-face{
-    font-family: "Lato-Light";
-    src: url(../fonts/Lato-LightItalic.ttf) format('truetype');
-    font-weight: lighter;
-    font-style: italic;
+    font-family: "Work_Sans_bold";
+    src: url(../fonts/WorkSans-Regular.ttf) format('truetype');
+    font-weight: normal;
 }
 
-a,h1,h2,h3,#main-title{
-    font-family: "Lato-Light";
+
+a,h1,h2,h3,#main-title,#mobile-menu-text{
+    font-family: "Work_Sans";
     font-weight: lighter;
-    font-style: italic;
+}
+
+.smalltitle{
+    font-family: "Work_Sans_bold";
 }
 
 a{
@@ -213,8 +215,8 @@ a.recent-update:hover{
 
 .section{
     position: relative;
-    margin: 40px 0 0 0;
-    padding: 20px 30px 10px 30px;
+    margin: 20px 0 0 0;
+    padding: 40px 30px 10px 30px;
 }
 
 .ontop{

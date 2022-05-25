@@ -2,26 +2,31 @@ const button= document.getElementById("open-nav-button");
 const cube= document.getElementById("nav-button");
 const circle= document.getElementById("circle-button");
 const menu=document.getElementById("mobile-menu");
+const html_obj= document.getElementsByTagName("html")[0];
 let menuopen=false;
 
-button.addEventListener("mouseup",function(){
+
+html_obj.addEventListener("mouseup", function(){
     console.log("---------------------")
-    console.log("touchend event")
+    console.log("touch outside menu")
+    if(menuopen) closeMenu();
+})
+
+button.addEventListener("mouseup",function(e){ //handle menu button click event
+    console.log("---------------------")
+    console.log("touch end menu event")
+    e.stopPropagation();
     const current=menuopen;
     if(current) {
         closeMenu();
-        console.log("current is: "+current);
-        console.log("menuopne is:"+menuopen);
     }
     if(!current){
         openMenu();
-        console.log("current is: "+current);
-        console.log("menuopne is:"+menuopen);
     }
 })
 
 function openMenu(e){
-    console.log("open event")
+    console.log("open menu event")
     cube.style.width="50px";
     cube.style.height="50px";
     circle.style.width="60px";
@@ -31,7 +36,7 @@ function openMenu(e){
 }
 
 function closeMenu(e){
-    console.log("close event")
+    console.log("close menu event")
     cube.style.width="35px";
     cube.style.height="35px";
     circle.style.width="45px";

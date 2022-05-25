@@ -1,23 +1,23 @@
 const nav=document.getElementById("menu");
 const subnav=document.getElementById("subnav").firstElementChild.children;
 const sections=document.getElementById("sections").children;
+const header= document.getElementById
 const spositions=[0];
 let currentsection;
 
 let lineon=false;
 
-//find position of sections
-for(let section of sections){
+
+for(let section of sections){ //find position of sections
     const rect = section.getBoundingClientRect();
     const Top = window.pageYOffset;
     spositions.push(Top+(rect.top+rect.bottom)/2);
 }
 
-//current state updates from sudden load
+
 updateSubnav();
 
-//page scroll events
-window.addEventListener("scroll", function(){
+window.addEventListener("scroll", function(){ //page scroll events
         topMenuTransitionEffect();
         updateSubnav();
 })
@@ -26,11 +26,11 @@ window.addEventListener("scroll", function(){
 function topMenuTransitionEffect(){ //Shadow effect on TopMenu
     if( !lineon && window.pageYOffset>250){
         nav.classList.add("transition");
-        lineon= true;
+        lineon = true;
     }
     if( lineon && window.pageYOffset<250){
         nav.classList.remove("transition");
-        lineon= false;
+        lineon = false;
     }
 }
 
