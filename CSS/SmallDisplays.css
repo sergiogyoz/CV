@@ -29,9 +29,19 @@ h1{
     width: 100%;
     height: 60px;
     padding-top: 10px;
-    padding-right: 10px;
+    padding-left: 0px;
     font-size: 28px;
-    text-align: right;
+    text-align: center;
+    animation-name: make-space;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes make-space {
+    0%{padding-left: 0px;}
+    15%{padding-left: 60px;}
+    85%{padding-left: 60px;}
+    100%{padding-left: 0px;}
 }
 
 #mobile-menu-layout{
@@ -72,13 +82,13 @@ h1{
         left: 27px;
         top: 27px;
         height: 0px;}
-    20%{font-size: 22pt;
+    15%{font-size: 18pt;
         left: 60px;
-        top: 10px;
+        top: 30px;
         height: 60px;}
-    80%{font-size: 22pt;
+    85%{font-size: 18pt;
         left: 60px;
-        top: 10px;
+        top: 30px;
         height: 60px;}
     100%{font-size: 0pt;
         left: 27px;
