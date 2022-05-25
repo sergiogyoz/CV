@@ -16,7 +16,7 @@
 }
 
 
-a,h1,h2,h3,#main-title{
+a,h1,h2,h3,#main-title,#mobile-menu-text{
     font-family: "Work_Sans";
     font-weight: lighter;
 }
@@ -195,10 +195,6 @@ a.content-link{
     height: 200px;
 }
 
-a.recent-update{
-    display: inline-block;
-}
-
 a.recent-update:hover{
     text-decoration: underline;
 }
@@ -219,8 +215,8 @@ a.recent-update:hover{
 
 .section{
     position: relative;
-    margin: 40px 0 0 0;
-    padding: 20px 30px 10px 30px;
+    margin: 20px 0 0 0;
+    padding: 40px 30px 10px 30px;
 }
 
 .ontop{

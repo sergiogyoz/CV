@@ -29,8 +29,9 @@ h1{
     width: 100%;
     height: 60px;
     padding-top: 10px;
+    padding-right: 10px;
     font-size: 28px;
-    text-align: center;
+    text-align: right;
 }
 
 #mobile-menu-layout{
@@ -55,6 +56,34 @@ h1{
 
 @keyframes glide {
     50%{ transform:  translateY(2px); }
+}
+
+#mobile-menu-text{
+    position: absolute;
+    font-size: 0pt;
+    height: 0px;
+    animation-name: hide-word;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes hide-word{
+    0% {font-size: 0pt;
+        left: 27px;
+        top: 27px;
+        height: 0px;}
+    20%{font-size: 22pt;
+        left: 60px;
+        top: 10px;
+        height: 60px;}
+    80%{font-size: 22pt;
+        left: 60px;
+        top: 10px;
+        height: 60px;}
+    100%{font-size: 0pt;
+        left: 27px;
+        top: 27px;
+        height: 0px;}
 }
 
 #nav-button{

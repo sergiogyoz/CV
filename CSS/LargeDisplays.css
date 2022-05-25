@@ -45,6 +45,20 @@ header{
     100%{opacity: 1;}
 }
 
+
+.menu-bar-slidedown{
+    animation: slidedown;
+    animation-duration: 1s;
+}
+
+@keyframes slidedown{
+    0%{     top: -40px;}
+    20%{     top: -40px;}
+    100%{   top: 0px;}
+}
+
+
+
 h1{
     font-size: 70px;
     padding-top: 90px;
@@ -112,12 +126,12 @@ h1{
 }
 
 a.current{
-    font-family: "Work_Sans";
-    background-color: #afafaf50;
+    font-family: "Work_Sans_bold";
+/*    background-color: #afafaf50;*/
 }
 
 a.subcurrent{
-    font-family: "Work_Sans";
+    font-family: "Work_Sans_bold";
 }
 
 .col{
