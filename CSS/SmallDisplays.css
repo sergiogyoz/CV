@@ -33,14 +33,15 @@ h1{
     font-size: 28px;
     text-align: center;
     animation-name: make-space;
-    animation-duration: 2s;
+    animation-duration: 6s;
     animation-timing-function: ease-in-out;
 }
 
 @keyframes make-space {
     0%{padding-left: 0px;}
-    15%{padding-left: 60px;}
-    85%{padding-left: 60px;}
+    20%{padding-left: 0px;}
+    25%{padding-left: 60px;}
+    95%{padding-left: 60px;}
     100%{padding-left: 0px;}
 }
 
@@ -73,7 +74,7 @@ h1{
     font-size: 0pt;
     height: 0px;
     animation-name: hide-word;
-    animation-duration: 2s;
+    animation-duration: 6s;
     animation-timing-function: ease-in-out;
 }
 
@@ -82,13 +83,17 @@ h1{
         left: 27px;
         top: 27px;
         height: 0px;}
-    15%{font-size: 18pt;
-        left: 60px;
-        top: 30px;
+    20% {font-size: 0pt;
+        left: 27px;
+        top: 27px;
+        height: 0px;}
+    25%{font-size: 14pt;
+        left: 70px;
+        top: 20px;
         height: 60px;}
-    85%{font-size: 18pt;
-        left: 60px;
-        top: 30px;
+    95%{font-size: 14pt;
+        left: 70px;
+        top: 20px;
         height: 60px;}
     100%{font-size: 0pt;
         left: 27px;
