@@ -1,18 +1,21 @@
 @font-face{
     font-family: "Open-Sans";
     src: url(../fonts/OpenSans-Regular.ttf) format('truetype');
+    font-display: swap;
 }
 
 @font-face{
     font-family: "Work_Sans";
     src: url(../fonts/WorkSans-Light.ttf) format('truetype');
     font-weight: normal;
+    font-display: swap;
 }
 
 @font-face{
     font-family: "Work_Sans_bold";
     src: url(../fonts/WorkSans-Regular.ttf) format('truetype');
     font-weight: normal;
+    font-display: swap;
 }
 
 
@@ -207,6 +210,11 @@ a.recent-update:hover{
     border-radius: 3px;
     object-fit: cover;
     box-shadow: 0 0 10px -5px #505050;
+}
+
+.square-img-600{
+    height: 600px;
+    width: 600px;
 }
 
 #sections{

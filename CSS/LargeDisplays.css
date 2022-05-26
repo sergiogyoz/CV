@@ -49,11 +49,12 @@ header{
 .menu-bar-slidedown{
     animation: slidedown;
     animation-duration: 1s;
+    animation-timing-function: ease-out;
 }
 
 @keyframes slidedown{
     0%{     top: -40px;}
-    20%{     top: -40px;}
+    60%{     top: -40px;}
     100%{   top: 0px;}
 }
 
@@ -187,11 +188,6 @@ ul.social-networks>li>a>svg.icons{
 
 .onehalf{
     width: 50%;
-}
-
-
-#mail-icon{
-
 }
 
 .smalltext{
