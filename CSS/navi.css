@@ -1,0 +1,42 @@
+div{
+    height: 100px;
+    width: 100px;
+}
+
+#b1{
+    position: absolute;
+    left: 200px;
+    top: 20px;
+}
+
+#adentro{
+    position: absolute;
+    top: 50px;
+}
+
+#b2{
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+}
+
+
+#muchooo{
+    height: 1800px;
+}
+
+.rojo{
+    background-color: red;
+}
+
+.amarillo{
+    background-color: yellow;
+}
+
+.verde{
+    background-color: green;
+}
+
+.rosado{
+    background-color: pink;
+}
