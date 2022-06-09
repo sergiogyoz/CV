@@ -1,42 +1,27 @@
-div{
-    height: 100px;
-    width: 100px;
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
-#b1{
-    position: absolute;
-    left: 200px;
-    top: 20px;
+header{
+    height: 120px;
+    background-color: lightgreen;
 }
 
-#adentro{
-    position: absolute;
-    top: 50px;
-}
-
-#b2{
+nav{
     position: fixed;
-    right: 10px;
-    bottom: 20px;
+    width: 100%;
+    background-color: lightgoldenrodyellow;
+    height: 60px;
 }
 
-
-#muchooo{
-    height: 1800px;
+#content{
+    height: 1200px;
+    background-color: lightpink;
 }
 
-.rojo{
-    background-color: red;
-}
-
-.amarillo{
-    background-color: yellow;
-}
-
-.verde{
-    background-color: green;
-}
-
-.rosado{
-    background-color: pink;
+footer{
+    height: 200px;
+    background-color: lightseagreen;
 }
