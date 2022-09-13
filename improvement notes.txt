@@ -1,0 +1,4 @@
+- mobile menu is still not noticeable, maybe let the menu word out
+- mobile menu pop up options feel a bit "old design" maybe make the side slide
+- PC content could be loaded as sliding down cards
+- PC could use pre loading map as youtube does if the media load is slowx	
